@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_heading1">18dp</dimen>
+    <dimen name="dimen_heading2">16dp</dimen>
+    <dimen name="dimen_body">14dp</dimen>
+    <dimen name="dimen_filledButtonWidth">300dp</dimen>
+    <dimen name="dimen_filledButtonHeight">40dp</dimen>
+    <dimen name="dimen_scrollWidth">20dp</dimen>
+    <dimen name="dimen_scrollHeight">15dp</dimen>
+    <dimen name="dimen_homeWidth">25dp</dimen>
+    <dimen name="dimen_homeHeight">20dp</dimen>
+</resources>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnChildhood"
+        style="@style/style_filled_button"
+        android:layout_width="@dimen/dimen_filledButtonWidth"
+        android:layout_height="@dimen/dimen_filledButtonHeight"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rect_rounded_button"
+        android:text="@string/btnChildhood"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtProfileDateOfBirth" />
+
+    <Button
+        android:id="@+id/btnFamily"
+        style="@style/style_filled_button"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rect_rounded_button"
+        android:text="@string/btnFamily"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnChildhood" />
+
+    <Button
+        android:id="@+id/btnWork"
+        style="@style/style_filled_button"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rect_rounded_button"
+        android:text="@string/btnWork"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFamily" />
+
+    <Button
+        android:id="@+id/btnWisdom"
+        style="@style/style_filled_button"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rect_rounded_button"
+        android:text="@string/btnWisdom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnWork" />
+
+    <Button
+        android:id="@+id/btnScrollDown"
+        android:layout_width="@dimen/dimen_scrollWidth"
+        android:layout_height="@dimen/dimen_scrollHeight"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/icon_scroll_down"
+        app:layout_constraintEnd_toStartOf="@+id/btnScrollUp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnWisdom" />
+
+    <Button
+        android:id="@+id/btnScrollUp"
+        android:layout_width="@dimen/dimen_scrollWidth"
+        android:layout_height="@dimen/dimen_scrollHeight"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/icon_scroll_up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnScrollDown"
+        app:layout_constraintTop_toBottomOf="@+id/btnWisdom" />
+
+    <Button
+        android:id="@+id/btnAppHome"
+        android:layout_width="@dimen/dimen_homeWidth"
+        android:layout_height="@dimen/dimen_homeHeight"
+        android:background="@drawable/icon_home"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtAppName2"
+        app:layout_constraintEnd_toStartOf="@+id/txtAppName2"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="215dp"
+        android:layout_height="213dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/circle_background"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgProfilePicture"
+            android:layout_width="215dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:contentDescription="@string/descProfileImage"
+            android:src="@drawable/man" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txtProfileName"
+        style="@style/style_heading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Dr. Adam Jonathan Grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+    <TextView
+        android:id="@+id/txtProfileLocation"
+        style="@style/style_heading2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Philadelphia, USA"
+        app:layout_constraintEnd_toEndOf="@+id/txtProfileName"
+        app:layout_constraintStart_toStartOf="@+id/txtProfileName"
+        app:layout_constraintTop_toBottomOf="@+id/txtProfileName" />
+
+    <TextView
+        android:id="@+id/txtProfileDateOfBirth"
+        style="@style/style_heading2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="1937"
+        app:layout_constraintEnd_toEndOf="@+id/txtProfileLocation"
+        app:layout_constraintStart_toStartOf="@+id/txtProfileLocation"
+        app:layout_constraintTop_toBottomOf="@+id/txtProfileLocation" />
+
+    <TextView
+        android:id="@+id/txtAppName1"
+        style="@style/style_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name1"
+        app:layout_constraintBottom_toTopOf="@+id/txtAppName2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtAppName2"
+        style="@style/style_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="@string/app_name2"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="@+id/txtAppName1"
+        app:layout_constraintStart_toStartOf="@+id/txtAppName1" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

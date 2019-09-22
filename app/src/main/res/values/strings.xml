@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Sample Screen</string>
+    <string name="app_name1">IT IS MY</string>
+    <string name="app_name2">EXPERIENCE</string>
+    <string name="descProfileImage">Profile Image</string>
+    <string name="btnChildhood">Childhood</string>
+    <string name="btnFamily">Family</string>
+    <string name="btnWork">Work</string>
+    <string name="btnWisdom">Wisdom</string>
+</resources>

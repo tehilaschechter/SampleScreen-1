@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    >
+
+    <!--this is the outline for the border-circle-->
+    <stroke
+        android:width="3dp"
+        android:color="#ffb80a"/>
+
+    <!--first two indicate opacity. This is for the solid fill on the outer shape-->
+    <solid android:color="#ffffff" />
+
+</shape>
