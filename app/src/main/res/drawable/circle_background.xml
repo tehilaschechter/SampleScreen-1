@@ -7,7 +7,7 @@
     <!--this is the outline for the border-circle-->
     <stroke
         android:width="3dp"
-        android:color="#ffb80a"/>
+        android:color="@color/color_circleOutline"/>
 
     <!--first two indicate opacity. This is for the solid fill on the outer shape-->
     <solid android:color="#ffffff" />

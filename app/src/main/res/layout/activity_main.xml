@@ -85,11 +85,21 @@
         app:layout_constraintHorizontal_bias="0.19"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <Button
+        android:id="@+id/btnMenu"
+        android:layout_width="@dimen/dimen_homeWidth"
+        android:layout_height="@dimen/dimen_homeHeight"
+        android:background="@drawable/icon_hamburger"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtAppName2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.81"
+        app:layout_constraintStart_toEndOf="@+id/txtAppName2" />
+
     <FrameLayout
         android:id="@+id/frameLayout"
         android:layout_width="215dp"
         android:layout_height="213dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="105dp"
         android:background="@drawable/circle_background"
         android:padding="5dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -103,7 +113,6 @@
             android:layout_gravity="center_horizontal|center_vertical"
             android:contentDescription="@string/descProfileImage"
             android:src="@drawable/man" />
-
     </FrameLayout>
 
     <TextView
@@ -155,12 +164,11 @@
         style="@style/style_app_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="40dp"
         android:text="@string/app_name2"
         app:layout_constraintBottom_toTopOf="@+id/frameLayout"
         app:layout_constraintEnd_toEndOf="@+id/txtAppName1"
         app:layout_constraintStart_toStartOf="@+id/txtAppName1" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

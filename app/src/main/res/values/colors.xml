@@ -6,4 +6,5 @@
     <color name="color_Primary">#720016</color>
     <color name="color_categoryButtonFill">#FFDD8D</color>
     <color name="color_bodyText">#010101</color>
+    <color name="color_circleOutline">#ffb80a</color>
 </resources>
