@@ -7,4 +7,7 @@
     <string name="btnFamily">Family</string>
     <string name="btnWork">Work</string>
     <string name="btnWisdom">Wisdom</string>
+    <string name="txtChildren">Children</string>
+    <string name="btnBirth">Birth</string>
+    <string name="btnFirstStep">First Step</string>
 </resources>

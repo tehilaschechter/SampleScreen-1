@@ -9,4 +9,5 @@
     <dimen name="dimen_scrollHeight">15dp</dimen>
     <dimen name="dimen_homeWidth">25dp</dimen>
     <dimen name="dimen_homeHeight">20dp</dimen>
+    <dimen name="dimen_categoryHeading">32dp</dimen>
 </resources>

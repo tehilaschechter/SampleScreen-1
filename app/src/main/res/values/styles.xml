@@ -37,4 +37,18 @@
         <item name="android:textSize">@dimen/dimen_body</item>
         <item name="android:typeface">serif</item>
     </style>
+
+    <style name="style_categoryHeading">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/dimen_categoryHeading</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="style_categorySubHeading">
+        <item name="android:textColor">@color/color_Primary</item>
+        <item name="android:textSize">@dimen/dimen_categoryHeading</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
 </resources>
