@@ -10,4 +10,6 @@
     <string name="txtChildren">Children</string>
     <string name="btnBirth">Birth</string>
     <string name="btnFirstStep">First Step</string>
+    <string name="btnWeddingDay">Wedding day</string>
+    <string name="btnMemories">Memories</string>
 </resources>
