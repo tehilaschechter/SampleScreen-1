@@ -21,12 +21,12 @@ public class child extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_child);
 
-        GradientDrawable gradientDrawable = new GradientDrawable(
+        /*GradientDrawable gradientDrawable = new GradientDrawable(
 
                 GradientDrawable.Orientation.TOP_BOTTOM,
                 new int[]{ContextCompat.getColor(this, R.color.color_mediaGradientTop),
+                        ContextCompat.getColor(this, R.color.color_mediaGradientTop),
                         ContextCompat.getColor(this, R.color.color_mediaGradientSecond),
-                        ContextCompat.getColor(this, R.color.color_mediaGradientThird),
                         ContextCompat.getColor(this, R.color.color_mediaGradientThird),
                         ContextCompat.getColor(this,R.color.colorWhite),
                         ContextCompat.getColor(this,R.color.colorWhite),
@@ -37,7 +37,7 @@ public class child extends AppCompatActivity {
                 );
 
 
-        findViewById(R.id.lytConstraint).setBackground(gradientDrawable);
+        findViewById(R.id.lytConstraint).setBackground(gradientDrawable);*/
 
 
     }

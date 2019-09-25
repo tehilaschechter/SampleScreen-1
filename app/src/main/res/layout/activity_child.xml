@@ -5,6 +5,7 @@
     android:id="@+id/lytConstraint"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_brown"
     tools:context=".child">
 
     <Button
@@ -93,6 +94,7 @@
             android:layout_gravity="center_horizontal|center_vertical"
             android:contentDescription="@string/descProfileImage"
             android:src="@drawable/baby" />
+
     </FrameLayout>
 
     <TextView
