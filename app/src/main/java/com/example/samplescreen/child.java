@@ -42,7 +42,7 @@ public class child extends AppCompatActivity {
 
         findViewById(R.id.lytConstraint).setBackground(gradientDrawable);
 
-        btnBirth = (Button)findViewById(R.id.btnBirth);
+        /*btnBirth = (Button)findViewById(R.id.btnBirth);
 
         btnBirth.setOnClickListener(new View.OnClickListener(){
             Intent intNextActivity = new Intent(child.this, JPGBackground.class);
@@ -52,7 +52,7 @@ public class child extends AppCompatActivity {
             public void onClick(View v) {
                 startActivity(intNextActivity);
             }
-        });
+        });*/
     }
 
 

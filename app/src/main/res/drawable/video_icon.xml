@@ -4,8 +4,8 @@
     <item
         android:id="@+id/half_overlay"
         android:drawable="@drawable/icon_video"
-        android:width="35dp"
-        android:height="25dp"
+        android:width="@dimen/dimen_mediaIconWidth"
+        android:height="@dimen/dimen_mediaIconHeight"
         />
 
 </layer-list>

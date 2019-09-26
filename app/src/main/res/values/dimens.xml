@@ -3,7 +3,7 @@
     <!--TEXT DIMENS-->
     <dimen name="dimen_heading1">18dp</dimen>
     <dimen name="dimen_heading2">16dp</dimen>
-    <dimen name="dimen_body">14dp</dimen>
+    <dimen name="dimen_body">20dp</dimen>
     <dimen name="dimen_categoryHeading">32dp</dimen>
 
 
@@ -14,4 +14,10 @@
     <dimen name="dimen_scrollHeight">32dp</dimen>
     <dimen name="dimen_homeWidth">35dp</dimen>
     <dimen name="dimen_homeHeight">30dp</dimen>
+    <dimen name="dimen_mediaIconWidth">60dp</dimen>
+    <dimen name="dimen_mediaIconHeight">25dp</dimen>
+
+
+    <!--OTHER-->
+    <dimen name="dimen_centerMediaButtonText">50dp</dimen>
 </resources>
