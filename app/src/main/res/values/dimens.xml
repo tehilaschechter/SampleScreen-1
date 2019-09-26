@@ -21,7 +21,7 @@
     <dimen name="dimen_hamburgerHeight">20dp</dimen>
 
     <dimen name="dimen_mediaIconWidth">60dp</dimen>
-    <dimen name="dimen_mediaIconHeight">25dp</dimen>
+    <dimen name="dimen_mediaIconHeight">20dp</dimen>
 
 
     <!--OTHER-->
