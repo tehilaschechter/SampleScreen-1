@@ -2,7 +2,7 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="android:fontFamily">Open Sans</item>
+        <item name="android:fontFamily">@font/font_view_body_normal</item>
         <item name="colorPrimary">@color/color_Primary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
@@ -10,14 +10,13 @@
 
     <style name="style_heading1">
         <item name="android:textColor">@color/color_Primary</item>
-        <item name="android:fontFamily">Open Sans</item>
+        <item name="android:fontFamily">@font/opensans_semibold</item>
         <item name="android:textSize">@dimen/dimen_heading1</item>
-        <item name="android:textStyle">bold</item>
     </style>
 
     <style name="style_heading2">
         <item name="android:textColor">@color/color_Primary</item>
-        <item name="android:fontFamily">Open Sans</item>
+        <item name="android:fontFamily">@font/font_view_body_normal</item>
         <item name="android:textSize">@dimen/dimen_heading2</item>
         <item name="android:textStyle">normal</item>
     </style>
@@ -25,8 +24,7 @@
     <style name="style_filled_button">
         <item name="android:color">@color/color_categoryButtonFill</item>
         <item name="android:textColor">@color/color_bodyText</item>
-        <item name="android:fontFamily">Open Sans</item>
-        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/opensans_semibold</item>
         <item name="android:textSize">@dimen/dimen_body</item>
         <item name="android:layout_width">@dimen/dimen_filledButtonWidth</item>
         <item name="android:layout_height">@dimen/dimen_filledButtonHeight</item>
