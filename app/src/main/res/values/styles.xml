@@ -25,12 +25,21 @@
     <style name="style_categoryHeading">
         <item name="android:textColor">@color/colorWhite</item>
         <item name="android:textSize">@dimen/dimen_categoryHeading</item>
+        <item name="android:fontFamily">@font/font_view_body_normal</item>
         <item name="android:textStyle">bold</item>
     </style>
 
     <style name="style_categorySubHeading">
         <item name="android:textColor">@color/color_Primary</item>
-        <item name="android:textSize">@dimen/dimen_categoryHeading</item>
+        <item name="android:textSize">@dimen/dimen_heading1</item>
+        <item name="android:fontFamily">@font/font_view_body_normal</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="style_categorySubHeading2">
+        <item name="android:textColor">@color/color_Primary</item>
+        <item name="android:textSize">@dimen/dimen_mediaSubheading2</item>
+        <item name="android:fontFamily">@font/font_view_body_normal</item>
         <item name="android:textStyle">bold</item>
     </style>
 

@@ -4,7 +4,8 @@
     <dimen name="dimen_heading1">22dp</dimen>
     <dimen name="dimen_heading2">16dp</dimen>
     <dimen name="dimen_body">20dp</dimen>
-    <dimen name="dimen_categoryHeading">30dp</dimen>
+    <dimen name="dimen_categoryHeading">26dp</dimen>
+    <dimen name="dimen_mediaSubheading2">18dp</dimen>
     <dimen name="dimen_appName">11dp</dimen>
 
 
@@ -19,10 +20,10 @@
     <dimen name="dimen_homeHeight">25dp</dimen>
     <dimen name="dimen_hamburgerHeight">20dp</dimen>
 
-    <dimen name="dimen_mediaIconWidth">40dp</dimen>
+    <dimen name="dimen_mediaIconWidth">60dp</dimen>
     <dimen name="dimen_mediaIconHeight">25dp</dimen>
 
 
     <!--OTHER-->
-    <dimen name="dimen_centerMediaButtonText">50dp</dimen>
+    <dimen name="dimen_centerMediaButtonText">60dp</dimen>
 </resources>
