@@ -28,6 +28,7 @@
         <item name="android:textSize">@dimen/dimen_body</item>
         <item name="android:layout_width">@dimen/dimen_filledButtonWidth</item>
         <item name="android:layout_height">@dimen/dimen_filledButtonHeight</item>
+        <item name="android:textAllCaps">false</item>
     </style>
 
     <style name="style_app_name">
