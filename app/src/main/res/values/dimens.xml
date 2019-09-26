@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--TEXT DIMENS-->
-    <dimen name="dimen_heading1">18dp</dimen>
+    <dimen name="dimen_heading1">22dp</dimen>
     <dimen name="dimen_heading2">16dp</dimen>
     <dimen name="dimen_body">20dp</dimen>
     <dimen name="dimen_categoryHeading">32dp</dimen>
+    <dimen name="dimen_appName">10dp</dimen>
 
 
     <!--BUTTON DIMENS-->
     <dimen name="dimen_filledButtonWidth">275dp</dimen>
-    <dimen name="dimen_filledButtonHeight">40dp</dimen>
-    <dimen name="dimen_scrollWidth">35dp</dimen>
-    <dimen name="dimen_scrollHeight">32dp</dimen>
-    <dimen name="dimen_homeWidth">35dp</dimen>
-    <dimen name="dimen_homeHeight">30dp</dimen>
-    <dimen name="dimen_mediaIconWidth">60dp</dimen>
+    <dimen name="dimen_filledButtonHeight">36.5dp</dimen>
+
+    <dimen name="dimen_scrollWidth">14dp</dimen>
+    <dimen name="dimen_scrollHeight">14dp</dimen>
+
+    <dimen name="dimen_homeWidth">30dp</dimen>
+    <dimen name="dimen_homeHeight">25dp</dimen>
+    <dimen name="dimen_hamburgerHeight">20dp</dimen>
+
+    <dimen name="dimen_mediaIconWidth">40dp</dimen>
     <dimen name="dimen_mediaIconHeight">25dp</dimen>
 
 

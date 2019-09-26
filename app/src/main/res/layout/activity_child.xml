@@ -5,7 +5,8 @@
     android:id="@+id/lytConstraint"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".child">
+    tools:context=".child"
+    android:background="@mipmap/background_brown_with_grey_png">
 
     <Button
         android:id="@+id/btnAppHome"
@@ -111,7 +112,7 @@
         android:background="@drawable/transparent_rect_rounded_button"
         android:drawableEnd="@drawable/video_icon"
         android:paddingLeft="@dimen/dimen_centerMediaButtonText"
-        android:text="@string/btnBirth"
+        android:text="See JPG"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
