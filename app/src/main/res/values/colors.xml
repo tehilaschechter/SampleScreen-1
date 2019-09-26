@@ -7,6 +7,8 @@
     <color name="color_categoryButtonFill">#FFDD8D</color>
     <color name="color_bodyText">#010101</color>
     <color name="color_circleOutline">#ffb80a</color>
+
+    <!--GRADIENT COLORS-->
     <color name="color_mediaGradientTop">#765206</color>
     <color name="color_mediaGradientSecond">#D7AA18</color>
     <color name="color_mediaGradientThird">#EBCB6A</color>

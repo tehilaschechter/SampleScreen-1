@@ -1,15 +1,25 @@
 <resources>
+    <!--TEXT STRINGS-->
     <string name="app_name">Sample Screen</string>
     <string name="app_name1">IT IS MY</string>
     <string name="app_name2">EXPERIENCE</string>
-    <string name="descProfileImage">Profile Image</string>
+    <string name="txtChildren">Children</string>
+
+
+    <!--BUTTON STRINGS-->
+    <!--view home-->
     <string name="btnChildhood">Childhood</string>
     <string name="btnFamily">Family</string>
     <string name="btnWork">Work</string>
     <string name="btnWisdom">Wisdom</string>
-    <string name="txtChildren">Children</string>
+    <!--view child-->
     <string name="btnBirth">Birth</string>
     <string name="btnFirstStep">First Step</string>
     <string name="btnWeddingDay">Wedding day</string>
     <string name="btnMemories">Memories</string>
+
+
+    <!--DESCRIPTION STRINGS-->
+    <string name="descProfileImage">Profile Image</string>
+
 </resources>

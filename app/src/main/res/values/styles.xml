@@ -8,6 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--TEXT STYLES-->
     <style name="style_heading1">
         <item name="android:textColor">@color/color_Primary</item>
         <item name="android:fontFamily">@font/opensans_semibold</item>
@@ -21,22 +22,6 @@
         <item name="android:textStyle">normal</item>
     </style>
 
-    <style name="style_filled_button">
-        <item name="android:color">@color/color_categoryButtonFill</item>
-        <item name="android:textColor">@color/color_bodyText</item>
-        <item name="android:fontFamily">@font/opensans_semibold</item>
-        <item name="android:textSize">@dimen/dimen_body</item>
-        <item name="android:layout_width">@dimen/dimen_filledButtonWidth</item>
-        <item name="android:layout_height">@dimen/dimen_filledButtonHeight</item>
-        <item name="android:textAllCaps">false</item>
-    </style>
-
-    <style name="style_app_name">
-        <item name="android:textColor">@color/colorWhite</item>
-        <item name="android:textSize">@dimen/dimen_body</item>
-        <item name="android:typeface">serif</item>
-    </style>
-
     <style name="style_categoryHeading">
         <item name="android:textColor">@color/colorWhite</item>
         <item name="android:textSize">@dimen/dimen_categoryHeading</item>
@@ -47,6 +32,25 @@
         <item name="android:textColor">@color/color_Primary</item>
         <item name="android:textSize">@dimen/dimen_categoryHeading</item>
         <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="style_app_name">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/dimen_body</item>
+        <item name="android:typeface">serif</item>
+    </style>
+
+
+
+    <!--BUTTON STYLES-->
+    <style name="style_filled_button">
+        <item name="android:color">@color/color_categoryButtonFill</item>
+        <item name="android:textColor">@color/color_bodyText</item>
+        <item name="android:fontFamily">@font/opensans_semibold</item>
+        <item name="android:textSize">@dimen/dimen_body</item>
+        <item name="android:layout_width">@dimen/dimen_filledButtonWidth</item>
+        <item name="android:layout_height">@dimen/dimen_filledButtonHeight</item>
+        <item name="android:textAllCaps">false</item>
     </style>
 
 
