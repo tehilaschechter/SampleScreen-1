@@ -5,7 +5,8 @@
     android:id="@+id/lytConstraint"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".child">
+    tools:context=".child"
+    android:background="@mipmap/background_brown">
 
     <Button
         android:id="@+id/btnAppHome"
@@ -55,7 +56,7 @@
         style="@style/style_filled_button"
         android:layout_marginTop="15dp"
         android:background="@drawable/transparent_rect_rounded_button"
-        android:drawableEnd="@drawable/icon_video"
+        android:drawableEnd="@drawable/video_icon"
         android:text="@string/btnWeddingDay"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
