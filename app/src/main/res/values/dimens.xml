@@ -4,8 +4,8 @@
     <dimen name="dimen_heading1">22dp</dimen>
     <dimen name="dimen_heading2">16dp</dimen>
     <dimen name="dimen_body">20dp</dimen>
-    <dimen name="dimen_categoryHeading">32dp</dimen>
-    <dimen name="dimen_appName">10dp</dimen>
+    <dimen name="dimen_categoryHeading">30dp</dimen>
+    <dimen name="dimen_appName">11dp</dimen>
 
 
     <!--BUTTON DIMENS-->
