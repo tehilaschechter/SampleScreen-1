@@ -17,7 +17,7 @@ public class JPGBackground extends AppCompatActivity {
 
         btnBirth = (Button)findViewById(R.id.btnBirth);
 
-        btnBirth.setOnClickListener(new View.OnClickListener(){
+        /*btnBirth.setOnClickListener(new View.OnClickListener(){
             Intent intNextActivity = new Intent(JPGBackground.this, child.class);
 
 
@@ -25,6 +25,6 @@ public class JPGBackground extends AppCompatActivity {
             public void onClick(View v) {
                 startActivity(intNextActivity);
             }
-        });
+        });*/
     }
 }
