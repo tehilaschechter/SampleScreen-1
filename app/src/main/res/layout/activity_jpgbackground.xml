@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".JPGBackground"
-    android:background="@mipmap/background_brown">
+    android:background="@mipmap/background_brown_nine">
 
     <Button
         android:id="@+id/btnAppHome"
