@@ -8,6 +8,11 @@
     <color name="color_bodyText">#010101</color>
     <color name="color_circleOutline">#ffb80a</color>
 
+    <!--BACKGROUND COLORS-->
+    <color name="color_backgroundViewHome">#F1B143</color>
+    <color name="color_backgroundViewSub">#B36100</color>
+    <color name="color_backgroundViewFinal">#758D00</color>
+
     <!--GRADIENT COLORS-->
     <color name="color_mediaGradientTop">#765206</color>
     <color name="color_mediaGradientSecond">#D7AA18</color>
