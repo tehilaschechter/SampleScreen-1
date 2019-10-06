@@ -88,7 +88,7 @@
         app:layout_constraintEnd_toStartOf="@+id/btnScrollUp"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/glnButtonsLeft"
         tools:layout_editor_absoluteY="606dp" />
 
     <Button
@@ -97,7 +97,7 @@
         android:layout_height="@dimen/dimen_scrollHeight"
         android:layout_marginStart="40dp"
         android:background="@drawable/icon_scroll_up"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/glnButtonsRight"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btnScrollDown"
         tools:layout_editor_absoluteY="606dp" />
