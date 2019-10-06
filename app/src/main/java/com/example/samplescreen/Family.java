@@ -24,6 +24,7 @@ public class Family extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(intNextActivity);
+                overridePendingTransition(R.transition.anim_cut,R.transition.anim_cut);
             }
         });
     }
