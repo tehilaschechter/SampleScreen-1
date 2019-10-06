@@ -5,7 +5,7 @@
     android:id="@+id/lytConstraint"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color_backgroundViewFinal"
+    android:background="@color/color_backgroundViewCategory"
     tools:context=".Child">
 
     <Button
