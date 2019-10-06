@@ -31,8 +31,9 @@
     <Button
         android:id="@+id/btnBirth"
         style="@style/style_filled_button"
+        android:backgroundTint="@color/color_filledButtonDark"
         android:layout_width="0dp"
-        android:background="@drawable/transparent_rect_rounded_button"
+        android:background="@drawable/rect_rounded_button"
         android:drawableEnd="@drawable/video_icon"
         android:paddingLeft="@dimen/dimen_centerMediaButtonText"
         android:paddingRight="@dimen/dimen_mediaButtonRight"
@@ -46,9 +47,10 @@
     <Button
         android:id="@+id/btnFirstStep"
         style="@style/style_filled_button"
+        android:backgroundTint="@color/color_filledButtonDark"
         android:layout_width="0dp"
         android:layout_marginTop="15dp"
-        android:background="@drawable/transparent_rect_rounded_button"
+        android:background="@drawable/rect_rounded_button"
         android:drawableEnd="@drawable/camera_icon"
         android:paddingLeft="@dimen/dimen_centerMediaButtonText"
         android:paddingRight="@dimen/dimen_mediaButtonRight"
@@ -62,9 +64,10 @@
     <Button
         android:id="@+id/btnWeddingDay"
         style="@style/style_filled_button"
+        android:backgroundTint="@color/color_filledButtonDark"
         android:layout_width="0dp"
         android:layout_marginTop="15dp"
-        android:background="@drawable/transparent_rect_rounded_button"
+        android:background="@drawable/rect_rounded_button"
         android:drawableEnd="@drawable/video_icon"
         android:paddingLeft="@dimen/dimen_centerMediaButtonText"
 
@@ -78,10 +81,11 @@
 
     <Button
         android:id="@+id/btnMemories"
+        android:background="@drawable/rect_rounded_button"
+        android:backgroundTint="@color/color_filledButtonDark"
         style="@style/style_filled_button"
         android:layout_width="0dp"
         android:layout_marginTop="15dp"
-        android:background="@drawable/transparent_rect_rounded_button"
         android:drawableEnd="@drawable/video_icon"
         android:paddingLeft="@dimen/dimen_centerMediaButtonText"
         android:paddingRight="@dimen/dimen_mediaButtonRight"
@@ -151,11 +155,10 @@
     <TextView
         android:id="@+id/txtChildBirthday"
         style="@style/style_heading2"
+        android:textColor="@color/colorWhite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
         android:text="Born 1977"
-        app:layout_constraintBottom_toTopOf="@+id/btnBirth"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtChildName" />
@@ -163,13 +166,16 @@
     <TextView
         android:id="@+id/txtChildName"
         style="@style/style_categorySubHeading"
+        android:textColor="@color/colorWhite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:text="Bob Grey"
+        app:layout_constraintBottom_toTopOf="@+id/glnButtonsTop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        app:layout_constraintVertical_bias="0.07999998" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glnButtonsLeft"
@@ -197,21 +203,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.88" />
+        app:layout_constraintGuide_percent="0.82" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glnImageTop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.1133758" />
+        app:layout_constraintGuide_percent="0.15" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glnImageBottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.37197453" />
+        app:layout_constraintGuide_percent="0.41" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
