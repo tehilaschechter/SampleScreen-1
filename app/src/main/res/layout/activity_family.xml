@@ -53,11 +53,11 @@
         app:layout_constraintStart_toEndOf="@+id/txtAppName2" />
 
     <TextView
-        android:id="@+id/txtChildren"
+        android:id="@+id/txtFamily"
         style="@style/style_categoryHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/txtChildren"
+        android:text="@string/txtFamily"
         android:translationY="-6dp"
         app:layout_constraintBottom_toTopOf="@+id/frameLayout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -94,92 +94,41 @@
     </FrameLayout>
 
     <Button
-        android:id="@+id/btnBirth"
+        android:id="@+id/btnSpouse"
         style="@style/style_filled_button"
         android:layout_width="0dp"
-        android:background="@drawable/transparent_rect_rounded_button"
-        android:drawableEnd="@drawable/video_icon"
-        android:paddingLeft="@dimen/dimen_centerMediaButtonText"
-        android:paddingRight="@dimen/dimen_mediaButtonRight"
-        android:text="@string/btnBirth"
-        app:layout_constraintBottom_toTopOf="@+id/btnFirstStep"
+        android:background="@drawable/rect_rounded_button"
+        android:text="@string/btnSpouse"
+        app:layout_constraintBottom_toTopOf="@+id/btnChildren"
         app:layout_constraintEnd_toStartOf="@+id/glnButtonsRight"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/glnButtonsLeft"
         app:layout_constraintTop_toBottomOf="@+id/glnButtonsTop" />
 
     <Button
-        android:id="@+id/btnFirstStep"
+        android:id="@+id/btnChildren"
         style="@style/style_filled_button"
         android:layout_width="0dp"
         android:layout_marginTop="15dp"
-        android:background="@drawable/transparent_rect_rounded_button"
-        android:drawableEnd="@drawable/camera_icon"
-        android:paddingLeft="@dimen/dimen_centerMediaButtonText"
-        android:paddingRight="@dimen/dimen_mediaButtonRight"
-        android:text="@string/btnFirstStep"
-        app:layout_constraintBottom_toTopOf="@+id/btnWeddingDay"
+        android:background="@drawable/rect_rounded_button"
+        android:text="@string/btnChildren"
+        app:layout_constraintBottom_toTopOf="@+id/btnParents"
         app:layout_constraintEnd_toStartOf="@+id/glnButtonsRight"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/glnButtonsLeft"
-        app:layout_constraintTop_toBottomOf="@+id/btnBirth" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSpouse" />
 
     <Button
-        android:id="@+id/btnWeddingDay"
+        android:id="@+id/btnParents"
         style="@style/style_filled_button"
         android:layout_width="0dp"
         android:layout_marginTop="15dp"
-        android:background="@drawable/transparent_rect_rounded_button"
-        android:drawableEnd="@drawable/video_icon"
-        android:paddingLeft="@dimen/dimen_centerMediaButtonText"
-
-        android:paddingRight="@dimen/dimen_mediaButtonRight"
-        android:text="@string/btnWeddingDay"
-        app:layout_constraintBottom_toTopOf="@+id/btnMemories"
+        android:background="@drawable/rect_rounded_button"
+        android:text="@string/btnParents"
         app:layout_constraintEnd_toStartOf="@+id/glnButtonsRight"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/glnButtonsLeft"
-        app:layout_constraintTop_toBottomOf="@+id/btnFirstStep" />
-
-    <Button
-        android:id="@+id/btnMemories"
-        style="@style/style_filled_button"
-        android:layout_width="0dp"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/transparent_rect_rounded_button"
-        android:drawableEnd="@drawable/video_icon"
-        android:paddingLeft="@dimen/dimen_centerMediaButtonText"
-        android:paddingRight="@dimen/dimen_mediaButtonRight"
-        android:text="@string/btnMemories"
-        app:layout_constraintBottom_toTopOf="@+id/glnButtonsBottom"
-        app:layout_constraintEnd_toStartOf="@+id/glnButtonsRight"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/glnButtonsLeft"
-        app:layout_constraintTop_toBottomOf="@+id/btnWeddingDay" />
-
-    <TextView
-        android:id="@+id/txtChildBirthday"
-        style="@style/style_heading2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
-        android:text="Born 1977"
-        android:translationY="-5dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnBirth"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtChildName" />
-
-    <TextView
-        android:id="@+id/txtChildName"
-        style="@style/style_categorySubHeading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:text="Bob Grey"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/btnChildren" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glnButtonsLeft"
