@@ -15,7 +15,7 @@ public class Family extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_family);
 
-        btnChildren = (Button)findViewById(btnChildren);
+        btnChildren = (Button)findViewById(R.id.btnChildren);
 
         btnChildren.setOnClickListener(new View.OnClickListener(){
             Intent intNextActivity = new Intent(Family.this, Child.class);
