@@ -4,6 +4,7 @@
     <string name="app_name1">IT IS MY</string>
     <string name="app_name2">EXPERIENCE</string>
     <string name="txtChildren">Children</string>
+    <string name="txtFamily">Family</string>
 
 
     <!--BUTTON STRINGS-->
@@ -17,6 +18,10 @@
     <string name="btnFirstStep">First Step</string>
     <string name="btnWeddingDay">Wedding day</string>
     <string name="btnMemories">Memories</string>
+    <!--view family-->
+    <string name="btnSpouse">Spouse</string>
+    <string name="btnChildren">Children</string>
+    <string name="btnParents">Parents</string>
 
 
     <!--DESCRIPTION STRINGS-->

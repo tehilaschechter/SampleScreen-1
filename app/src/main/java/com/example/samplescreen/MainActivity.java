@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnFamily = (Button)findViewById(R.id.btnFamily);
+       btnFamily = (Button)findViewById(R.id.btnFamily);
 
        btnFamily.setOnClickListener(new View.OnClickListener(){
            Intent intNextActivity = new Intent(MainActivity.this, Family.class);
