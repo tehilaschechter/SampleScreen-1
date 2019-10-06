@@ -11,9 +11,13 @@
         android:id="@+id/btnAppHome"
         android:layout_width="@dimen/dimen_homeWidth"
         android:layout_height="@dimen/dimen_homeHeight"
+        android:layout_marginEnd="70dp"
         android:background="@drawable/icon_home"
-        app:layout_constraintBaseline_toBaselineOf="@+id/txtAppName2"
-        tools:layout_editor_absoluteX="25dp" />
+        app:chainUseRtl="false"
+        app:layout_constraintBottom_toBottomOf="@+id/txtAppName2"
+        app:layout_constraintEnd_toStartOf="@+id/txtAppName2"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/txtAppName1"
@@ -45,9 +49,12 @@
         android:id="@+id/btnMenu"
         android:layout_width="@dimen/dimen_homeWidth"
         android:layout_height="@dimen/dimen_hamburgerHeight"
+        android:layout_marginStart="70dp"
         android:background="@drawable/icon_hamburger"
-        app:layout_constraintBaseline_toBaselineOf="@+id/txtAppName2"
-        tools:layout_editor_absoluteX="337dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/txtAppName2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtAppName2" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glnTop"
@@ -61,6 +68,7 @@
         style="@style/style_categoryHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
         android:text="@string/txtParents"
         android:translationY="-6dp"
         app:layout_constraintBottom_toTopOf="@+id/frameLayout1"
@@ -111,7 +119,7 @@
         android:layout_height="wrap_content"
         android:text="Born 1897"
         android:textColor="@color/colorWhite"
-        android:translationY="-5dp"
+        android:translationY="-8dp"
         app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -159,7 +167,7 @@
         android:layout_height="wrap_content"
         android:text="Born 1901"
         android:textColor="@color/colorWhite"
-        android:translationY="-5dp"
+        android:translationY="-8dp"
         app:layout_constraintBottom_toTopOf="@+id/glnBottom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -171,6 +179,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_end="40dp" />
+        app:layout_constraintGuide_end="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

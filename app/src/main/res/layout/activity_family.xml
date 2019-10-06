@@ -72,15 +72,22 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.11592357" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glnImageRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
     <FrameLayout
         android:id="@+id/frameLayout"
-        android:layout_width="204dp"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/transparent_circle_background"
         android:padding="5dp"
         app:layout_constraintBottom_toTopOf="@+id/glnImageBottom"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/glnImageRight"
+        app:layout_constraintStart_toStartOf="@+id/glnImageLeft"
         app:layout_constraintTop_toTopOf="@+id/glnImageTop">
 
         <de.hdodenhof.circleimageview.CircleImageView
@@ -163,7 +170,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.37834394" />
+        app:layout_constraintGuide_percent="0.41" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glnImageLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
