@@ -9,6 +9,7 @@ import android.widget.Button;
 
 public class Family extends AppCompatActivity {
     Button btnChildren;
+    Button btnParents;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,11 +17,19 @@ public class Family extends AppCompatActivity {
         setContentView(R.layout.activity_family);
 
         btnChildren = (Button)findViewById(R.id.btnChildren);
+        btnParents = (Button)findViewById(R.id.btnParents);
 
         btnChildren.setOnClickListener(new View.OnClickListener(){
             Intent intNextActivity = new Intent(Family.this, Child.class);
+            @Override
+            public void onClick(View v) {
+                startActivity(intNextActivity);
+                overridePendingTransition(R.transition.anim_cut,R.transition.anim_cut);
+            }
+        });
 
-
+        btnParents.setOnClickListener(new View.OnClickListener(){
+            Intent intNextActivity = new Intent(Family.this, Parents.class);
             @Override
             public void onClick(View v) {
                 startActivity(intNextActivity);
