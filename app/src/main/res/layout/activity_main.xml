@@ -30,69 +30,77 @@
     <Button
         android:id="@+id/btnChildhood"
         style="@style/style_filled_button"
-        android:layout_width="@dimen/dimen_filledButtonWidth"
+        android:layout_width="0dp"
         android:layout_height="@dimen/dimen_filledButtonHeight"
-        android:layout_marginTop="10dp"
         android:background="@drawable/rect_rounded_button"
         android:text="@string/btnChildhood"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtProfileDateOfBirth" />
-
-    <Button
-        android:id="@+id/btnFamily"
-        style="@style/style_filled_button"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/rect_rounded_button"
-        android:text="@string/btnFamily"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnChildhood" />
-
-    <Button
-        android:id="@+id/btnWork"
-        style="@style/style_filled_button"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/rect_rounded_button"
-        android:text="@string/btnWork"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnFamily" />
+        app:layout_constraintBottom_toTopOf="@+id/btnFamily"
+        app:layout_constraintEnd_toStartOf="@+id/glnButtonsRight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/glnButtonsLeft"
+        app:layout_constraintTop_toBottomOf="@+id/glnButtonsTop"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
 
     <Button
         android:id="@+id/btnWisdom"
         style="@style/style_filled_button"
-        android:layout_marginTop="15dp"
+        android:layout_width="0dp"
         android:background="@drawable/rect_rounded_button"
         android:text="@string/btnWisdom"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnWork" />
+        app:layout_constraintBottom_toTopOf="@+id/glnButtonsBottom"
+        app:layout_constraintEnd_toStartOf="@+id/glnButtonsRight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/glnButtonsLeft"
+        app:layout_constraintTop_toBottomOf="@+id/btnWork"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <Button
+        android:id="@+id/btnFamily"
+        style="@style/style_filled_button"
+        android:layout_width="0dp"
+        android:background="@drawable/rect_rounded_button"
+        android:text="@string/btnFamily"
+        app:layout_constraintBottom_toTopOf="@+id/btnWork"
+        app:layout_constraintEnd_toStartOf="@+id/glnButtonsRight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/glnButtonsLeft"
+        app:layout_constraintTop_toBottomOf="@+id/btnChildhood"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <Button
+        android:id="@+id/btnWork"
+        style="@style/style_filled_button"
+        android:layout_width="0dp"
+        android:background="@drawable/rect_rounded_button"
+        android:text="@string/btnWork"
+        app:layout_constraintBottom_toTopOf="@+id/btnWisdom"
+        app:layout_constraintEnd_toStartOf="@+id/glnButtonsRight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/glnButtonsLeft"
+        app:layout_constraintTop_toBottomOf="@+id/btnFamily"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
 
     <Button
         android:id="@+id/btnScrollDown"
         android:layout_width="@dimen/dimen_scrollWidth"
         android:layout_height="@dimen/dimen_scrollHeight"
-        android:layout_marginTop="26dp"
         android:background="@drawable/icon_scroll_down"
         app:layout_constraintEnd_toStartOf="@+id/btnScrollUp"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnWisdom" />
+        tools:layout_editor_absoluteY="606dp" />
 
     <Button
         android:id="@+id/btnScrollUp"
         android:layout_width="@dimen/dimen_scrollWidth"
         android:layout_height="@dimen/dimen_scrollHeight"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="26dp"
         android:background="@drawable/icon_scroll_up"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btnScrollDown"
-        app:layout_constraintTop_toBottomOf="@+id/btnWisdom" />
+        tools:layout_editor_absoluteY="606dp" />
 
     <FrameLayout
         android:id="@+id/frameLayout"
@@ -117,10 +125,10 @@
     <TextView
         android:id="@+id/txtAppName1"
         style="@style/style_app_name"
-        android:textColor="@color/color_Primary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_name1"
+        android:textColor="@color/color_Primary"
         app:layout_constraintBottom_toTopOf="@+id/txtAppName2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
@@ -129,12 +137,12 @@
     <TextView
         android:id="@+id/txtAppName2"
         style="@style/style_app_name"
-        android:textColor="@color/color_Primary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="22dp"
         android:fontFamily="serif"
         android:text="@string/app_name2"
+        android:textColor="@color/color_Primary"
         app:layout_constraintBottom_toTopOf="@+id/frameLayout"
         app:layout_constraintEnd_toEndOf="@+id/txtAppName1"
         app:layout_constraintStart_toStartOf="@+id/txtAppName1" />
@@ -171,6 +179,34 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glnButtonsLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.12722646" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glnButtonsRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8727735" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glnButtonsTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5133758" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glnButtonsBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75031847" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

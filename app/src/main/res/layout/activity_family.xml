@@ -70,7 +70,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="90dp" />
+        app:layout_constraintGuide_percent="0.11592357" />
 
     <FrameLayout
         android:id="@+id/frameLayout"
@@ -135,35 +135,35 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="50dp" />
+        app:layout_constraintGuide_percent="0.12722646" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glnButtonsRight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_end="50dp" />
+        app:layout_constraintGuide_percent="0.8727735" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glnButtonsTop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="378dp" />
+        app:layout_constraintGuide_percent="0.48280254" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glnButtonsBottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="578dp" />
+        app:layout_constraintGuide_percent="0.73757964" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glnImageBottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="296dp" />
+        app:layout_constraintGuide_percent="0.37834394" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
