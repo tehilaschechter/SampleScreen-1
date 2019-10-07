@@ -14,12 +14,12 @@
         android:layout_height="@dimen/dimen_homeHeight"
         android:layout_marginStart="10dp"
         android:background="@drawable/icon_home"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/imgLogo"
         app:layout_constraintStart_toStartOf="parent" />
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imgLogo"
         android:layout_width="133dp"
         android:layout_height="29dp"
         android:layout_marginBottom="35dp"
@@ -35,7 +35,7 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/icon_hamburger"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/imgLogo"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
@@ -71,25 +71,55 @@
     </FrameLayout>
 
     <Button
-        android:id="@+id/btnFirstStep"
+        android:id="@+id/btnFirstMemory"
         style="@style/style_filled_button_category"
         android:layout_width="0dp"
-        android:layout_marginTop="15dp"
         android:background="@drawable/rect_rounded_button"
         android:drawableEnd="@drawable/camera_icon"
         android:paddingLeft="@dimen/dimen_centerMediaButtonText"
         android:paddingRight="@dimen/dimen_mediaButtonRight"
-        app:layout_constraintBottom_toTopOf="@+id/btnWeddingDay"
+        android:text="First Memory"
+        app:layout_constraintBottom_toTopOf="@+id/btnFirstHome"
         app:layout_constraintEnd_toStartOf="@+id/glnButtonsRight"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/glnButtonsLeft"
-        app:layout_constraintTop_toBottomOf="@+id/btnBirth" />
+        app:layout_constraintTop_toBottomOf="@+id/glnButtonsTop" />
 
     <Button
-        android:id="@+id/btnMemories"
+        android:id="@+id/btnFirstHome"
         style="@style/style_filled_button_category"
         android:layout_width="0dp"
-        android:layout_marginTop="15dp"
+        android:background="@drawable/rect_rounded_button"
+        android:drawableEnd="@drawable/video_icon"
+        android:paddingLeft="@dimen/dimen_centerMediaButtonText"
+        android:paddingRight="@dimen/dimen_mediaButtonRight"
+        android:text="First Home"
+        app:layout_constraintBottom_toTopOf="@+id/btnFear"
+        app:layout_constraintEnd_toStartOf="@+id/glnButtonsRight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/glnButtonsLeft"
+        app:layout_constraintTop_toBottomOf="@+id/btnFirstMemory" />
+
+    <Button
+        android:id="@+id/btnFear"
+        style="@style/style_filled_button_category"
+        android:layout_width="0dp"
+        android:background="@drawable/rect_rounded_button"
+        android:drawableEnd="@drawable/video_icon"
+        android:paddingLeft="@dimen/dimen_centerMediaButtonText"
+        android:paddingRight="@dimen/dimen_mediaButtonRight"
+        android:text="Fear"
+        app:layout_constraintBottom_toTopOf="@+id/btnDream"
+        app:layout_constraintEnd_toStartOf="@+id/glnButtonsRight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/glnButtonsLeft"
+        app:layout_constraintTop_toBottomOf="@+id/btnFirstHome" />
+
+    <Button
+        android:id="@+id/btnDream"
+        style="@style/style_filled_button_category"
+        android:text="Dream"
+        android:layout_width="0dp"
         android:background="@drawable/rect_rounded_button"
         android:drawableEnd="@drawable/video_icon"
         android:paddingLeft="@dimen/dimen_centerMediaButtonText"
@@ -98,37 +128,7 @@
         app:layout_constraintEnd_toStartOf="@+id/glnButtonsRight"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/glnButtonsLeft"
-        app:layout_constraintTop_toBottomOf="@+id/btnWeddingDay" />
-
-    <Button
-        android:id="@+id/btnWeddingDay"
-        style="@style/style_filled_button_category"
-        android:layout_width="0dp"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/rect_rounded_button"
-        android:drawableEnd="@drawable/video_icon"
-        android:paddingLeft="@dimen/dimen_centerMediaButtonText"
-
-        android:paddingRight="@dimen/dimen_mediaButtonRight"
-        app:layout_constraintBottom_toTopOf="@+id/btnMemories"
-        app:layout_constraintEnd_toStartOf="@+id/glnButtonsRight"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/glnButtonsLeft"
-        app:layout_constraintTop_toBottomOf="@+id/btnFirstStep" />
-
-    <Button
-        android:id="@+id/btnBirth"
-        style="@style/style_filled_button_category"
-        android:layout_width="0dp"
-        android:background="@drawable/rect_rounded_button"
-        android:drawableEnd="@drawable/video_icon"
-        android:paddingLeft="@dimen/dimen_centerMediaButtonText"
-        android:paddingRight="@dimen/dimen_mediaButtonRight"
-        app:layout_constraintBottom_toTopOf="@+id/btnFirstStep"
-        app:layout_constraintEnd_toStartOf="@+id/glnButtonsRight"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/glnButtonsLeft"
-        app:layout_constraintTop_toBottomOf="@+id/glnButtonsTop" />
+        app:layout_constraintTop_toBottomOf="@+id/btnFear" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glnButtonsLeft"

@@ -14,7 +14,7 @@
         android:layout_marginStart="13dp"
         android:background="@drawable/icon_home"
         android:backgroundTint="@color/color_Primary"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/imgLogo"
         app:layout_constraintEnd_toStartOf="@+id/txtAppName2"
         app:layout_constraintHorizontal_bias="0.19"
         app:layout_constraintStart_toStartOf="parent" />
@@ -31,7 +31,7 @@
         tools:layout_editor_absoluteY="54dp" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imgLogo"
         android:layout_width="133dp"
         android:layout_height="29dp"
         android:layout_marginBottom="25dp"
@@ -46,7 +46,7 @@
         android:layout_height="@dimen/dimen_hamburgerHeight"
         android:layout_marginEnd="13dp"
         android:background="@drawable/icon_hamburger"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/imgLogo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.81"
         app:layout_constraintStart_toEndOf="@+id/txtAppName2" />

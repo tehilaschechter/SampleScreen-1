@@ -12,21 +12,31 @@
         android:id="@+id/btnAppHome"
         android:layout_width="@dimen/dimen_homeWidth"
         android:layout_height="@dimen/dimen_homeHeight"
+        android:layout_marginStart="10dp"
         android:background="@drawable/icon_home"
-        app:layout_constraintBaseline_toBaselineOf="@+id/txtAppName2"
-        app:layout_constraintEnd_toStartOf="@+id/txtAppName2"
-        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintBottom_toBottomOf="@+id/imgLogo"
         app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="133dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="43dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@+id/txtChildhood"
+        app:layout_constraintEnd_toStartOf="@+id/btnMenu"
+        app:layout_constraintStart_toEndOf="@+id/btnAppHome" />
 
     <Button
         android:id="@+id/btnMenu"
         android:layout_width="@dimen/dimen_homeWidth"
         android:layout_height="@dimen/dimen_hamburgerHeight"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/icon_hamburger"
-        app:layout_constraintBaseline_toBaselineOf="@+id/txtAppName2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.81"
-        app:layout_constraintStart_toEndOf="@+id/txtAppName2" />
+        app:layout_constraintBottom_toBottomOf="@+id/imgLogo"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/btnBirth"
@@ -67,7 +77,6 @@
         android:background="@drawable/rect_rounded_button"
         android:drawableEnd="@drawable/video_icon"
         android:paddingLeft="@dimen/dimen_centerMediaButtonText"
-
         android:paddingRight="@dimen/dimen_mediaButtonRight"
         android:text="@string/btnWeddingDay"
         app:layout_constraintBottom_toTopOf="@+id/btnMemories"
@@ -112,30 +121,6 @@
             android:src="@drawable/baby" />
 
     </FrameLayout>
-
-    <TextView
-        android:id="@+id/txtAppName2"
-        style="@style/style_app_name"
-        android:textColor="@color/color_circleOutline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
-        android:text="@string/app_name2"
-        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
-        app:layout_constraintEnd_toEndOf="@+id/txtAppName1"
-        app:layout_constraintStart_toStartOf="@+id/txtAppName1" />
-
-    <TextView
-        android:id="@+id/txtAppName1"
-        style="@style/style_app_name"
-        android:textColor="@color/color_circleOutline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name1"
-        app:layout_constraintBottom_toTopOf="@+id/txtAppName2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/txtChildhood"
