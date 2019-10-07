@@ -22,7 +22,7 @@
         android:id="@+id/imgLogo"
         android:layout_width="133dp"
         android:layout_height="29dp"
-        android:layout_marginBottom="43dp"
+        android:layout_marginBottom="18dp"
         android:src="@drawable/logo"
         app:layout_constraintBottom_toTopOf="@+id/txtChildren"
         app:layout_constraintEnd_toStartOf="@+id/btnMenu"
@@ -107,7 +107,6 @@
         android:layout_height="201dp"
         android:background="@drawable/transparent_circle_background"
         android:padding="5dp"
-        app:layout_constraintBottom_toTopOf="@+id/glnImageBottom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/glnImageTop">
@@ -179,14 +178,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.58" />
+        app:layout_constraintGuide_percent="0.59" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glnButtonsBottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.82" />
+        app:layout_constraintGuide_percent="0.86" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glnImageTop"
@@ -194,13 +193,6 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.15" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/glnImageBottom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.41" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
