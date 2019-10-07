@@ -25,8 +25,8 @@ public class Spouse extends AppCompatActivity {
 
         // Programatically set CircleImage background color
         Drawable background = frameLayout.getBackground();
-        GradientDrawable gradientDrawable = (GradientDrawable) background;
-        gradientDrawable.setColor(ContextCompat.getColor(this,R.color.color_female)); //TODO: CANGE COLOR
+        GradientDrawable gradientDrawable = (GradientDrawable) background.mutate();
+        gradientDrawable.setColor(ContextCompat.getColor(this,R.color.color_female));
 
     }
 }
