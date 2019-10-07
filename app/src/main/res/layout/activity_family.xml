@@ -37,12 +37,11 @@
         style="@style/style_app_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="17dp"
         android:text="@string/app_name2"
         android:textColor="@color/colorWhite"
-        app:layout_constraintBottom_toTopOf="@+id/txtFamily"
         app:layout_constraintEnd_toEndOf="@+id/txtAppName1"
-        app:layout_constraintStart_toStartOf="@+id/txtAppName1" />
+        app:layout_constraintStart_toStartOf="@+id/txtAppName1"
+        tools:layout_editor_absoluteY="20dp" />
 
     <Button
         android:id="@+id/btnMenu"
@@ -59,12 +58,15 @@
         style="@style/style_categoryHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
         android:layout_marginBottom="5dp"
         android:text="@string/txtFamily"
         android:translationY="-6dp"
         app:layout_constraintBottom_toTopOf="@+id/frameLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAppName2"
+        app:layout_constraintVertical_bias="0.95" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glnImageTop"
@@ -103,7 +105,7 @@
 
     <Button
         android:id="@+id/btnSpouse"
-        style="@style/style_filled_button"
+        style="@style/style_filled_button_category"
         android:layout_width="0dp"
         android:background="@drawable/rect_rounded_button"
         android:text="@string/btnSpouse"
@@ -115,7 +117,7 @@
 
     <Button
         android:id="@+id/btnChildren"
-        style="@style/style_filled_button"
+        style="@style/style_filled_button_category"
         android:layout_width="0dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/rect_rounded_button"
@@ -128,7 +130,7 @@
 
     <Button
         android:id="@+id/btnParents"
-        style="@style/style_filled_button"
+        style="@style/style_filled_button_category"
         android:layout_width="0dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/rect_rounded_button"

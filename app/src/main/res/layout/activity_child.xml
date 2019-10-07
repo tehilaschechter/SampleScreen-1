@@ -30,8 +30,7 @@
 
     <Button
         android:id="@+id/btnBirth"
-        style="@style/style_filled_button"
-        android:backgroundTint="@color/color_filledButtonDark"
+        style="@style/style_filled_button_sub"
         android:layout_width="0dp"
         android:background="@drawable/rect_rounded_button"
         android:drawableEnd="@drawable/video_icon"
@@ -46,8 +45,7 @@
 
     <Button
         android:id="@+id/btnFirstStep"
-        style="@style/style_filled_button"
-        android:backgroundTint="@color/color_filledButtonDark"
+        style="@style/style_filled_button_sub"
         android:layout_width="0dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/rect_rounded_button"
@@ -63,8 +61,7 @@
 
     <Button
         android:id="@+id/btnWeddingDay"
-        style="@style/style_filled_button"
-        android:backgroundTint="@color/color_filledButtonDark"
+        style="@style/style_filled_button_sub"
         android:layout_width="0dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/rect_rounded_button"
@@ -82,8 +79,7 @@
     <Button
         android:id="@+id/btnMemories"
         android:background="@drawable/rect_rounded_button"
-        android:backgroundTint="@color/color_filledButtonDark"
-        style="@style/style_filled_button"
+        style="@style/style_filled_button_sub"
         android:layout_width="0dp"
         android:layout_marginTop="15dp"
         android:drawableEnd="@drawable/video_icon"

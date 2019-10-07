@@ -13,7 +13,8 @@
     <color name="color_backgroundViewSub">#B36100</color>
     <color name="color_backgroundViewCategory">#758D00</color>
 
-    <color name="color_filledButtonDark">#f1b143</color>
+    <color name="color_filledButtonSub">#f1b143</color>
+    <color name="color_filledButtonCategory">#DBE77A</color>
 
     <!--GRADIENT COLORS-->
     <color name="color_mediaGradientTop">#765206</color>
