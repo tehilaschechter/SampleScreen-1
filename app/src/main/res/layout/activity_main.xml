@@ -12,6 +12,7 @@
         android:layout_width="@dimen/dimen_homeWidth"
         android:layout_height="@dimen/dimen_homeHeight"
         android:background="@drawable/icon_home"
+        android:backgroundTint="@color/color_Primary"
         app:layout_constraintBottom_toBottomOf="@+id/txtAppName2"
         app:layout_constraintEnd_toStartOf="@+id/txtAppName2"
         app:layout_constraintHorizontal_bias="0.19"
@@ -51,6 +52,59 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.81"
         app:layout_constraintStart_toEndOf="@+id/txtAppName2" />
+
+    <TextView
+        android:id="@+id/txtProfileName"
+        style="@style/style_heading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Dr. Adam Jonathan Grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+    <TextView
+        android:id="@+id/txtProfileLocation"
+        style="@style/style_heading2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Philadelphia, USA"
+        app:layout_constraintEnd_toEndOf="@+id/txtProfileName"
+        app:layout_constraintStart_toStartOf="@+id/txtProfileName"
+        app:layout_constraintTop_toBottomOf="@+id/txtProfileName" />
+
+    <TextView
+        android:id="@+id/txtProfileDateOfBirth"
+        style="@style/style_heading2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="1937"
+        app:layout_constraintEnd_toEndOf="@+id/txtProfileLocation"
+        app:layout_constraintStart_toStartOf="@+id/txtProfileLocation"
+        app:layout_constraintTop_toBottomOf="@+id/txtProfileLocation" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="239dp"
+        android:layout_height="243dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/circle_background"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgProfilePicture"
+            android:layout_width="220dp"
+            android:layout_height="227dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:contentDescription="@string/descProfileImage"
+            android:src="@drawable/man" />
+    </FrameLayout>
 
     <Button
         android:id="@+id/btnChildhood"
@@ -128,59 +182,6 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btnScrollDown"
         app:layout_constraintTop_toTopOf="@+id/glnButtonsBottom" />
-
-    <FrameLayout
-        android:id="@+id/frameLayout"
-        android:layout_width="239dp"
-        android:layout_height="243dp"
-        android:layout_marginTop="60dp"
-        android:background="@drawable/circle_background"
-        android:padding="5dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/imgProfilePicture"
-            android:layout_width="220dp"
-            android:layout_height="227dp"
-            android:layout_gravity="center_horizontal|center_vertical"
-            android:contentDescription="@string/descProfileImage"
-            android:src="@drawable/man" />
-    </FrameLayout>
-
-    <TextView
-        android:id="@+id/txtProfileLocation"
-        style="@style/style_heading2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
-        android:text="Philadelphia, USA"
-        app:layout_constraintEnd_toEndOf="@+id/txtProfileName"
-        app:layout_constraintStart_toStartOf="@+id/txtProfileName"
-        app:layout_constraintTop_toBottomOf="@+id/txtProfileName" />
-
-    <TextView
-        android:id="@+id/txtProfileDateOfBirth"
-        style="@style/style_heading2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
-        android:text="1937"
-        app:layout_constraintEnd_toEndOf="@+id/txtProfileLocation"
-        app:layout_constraintStart_toStartOf="@+id/txtProfileLocation"
-        app:layout_constraintTop_toBottomOf="@+id/txtProfileLocation" />
-
-    <TextView
-        android:id="@+id/txtProfileName"
-        style="@style/style_heading1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:text="Dr. Adam Jonathan Grey"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glnButtonsLeft"
