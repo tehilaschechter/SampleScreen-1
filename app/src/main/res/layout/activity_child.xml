@@ -24,7 +24,7 @@
         android:layout_height="29dp"
         android:layout_marginBottom="43dp"
         android:src="@drawable/logo"
-        app:layout_constraintBottom_toTopOf="@+id/txtChildhood"
+        app:layout_constraintBottom_toTopOf="@+id/txtChildren"
         app:layout_constraintEnd_toStartOf="@+id/btnMenu"
         app:layout_constraintStart_toEndOf="@+id/btnAppHome" />
 
@@ -123,7 +123,7 @@
     </FrameLayout>
 
     <TextView
-        android:id="@+id/txtChildhood"
+        android:id="@+id/txtChildren"
         style="@style/style_categoryHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

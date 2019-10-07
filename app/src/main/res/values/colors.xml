@@ -16,6 +16,8 @@
     <color name="color_filledButtonSub">#f1b143</color>
     <color name="color_filledButtonCategory">#DBE77A</color>
 
+    <color name="color_female">#EF6B69</color>
+
     <!--GRADIENT COLORS-->
     <color name="color_mediaGradientTop">#765206</color>
     <color name="color_mediaGradientSecond">#D7AA18</color>
