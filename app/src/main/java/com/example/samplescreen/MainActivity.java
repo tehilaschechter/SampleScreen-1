@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button btnChildhood;
     Button btnFamily;
+    Button btnWork;
 
 
     @Override
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         btnChildhood = (Button)findViewById(R.id.btnChildhood);
         btnFamily = (Button)findViewById(R.id.btnFamily);
+        btnWork = (Button)findViewById(R.id.btnWork);
 
         btnChildhood.setOnClickListener(new View.OnClickListener(){
             Intent intNextActivity = new Intent(MainActivity.this, Childhood.class);
@@ -38,6 +40,15 @@ public class MainActivity extends AppCompatActivity {
                 overridePendingTransition(R.transition.anim_cut,R.transition.anim_cut);
            }
        });
+
+        btnWork.setOnClickListener(new View.OnClickListener(){
+            Intent intNextActivity = new Intent(MainActivity.this, Work.class);
+            @Override
+            public void onClick(View v) {
+                startActivity(intNextActivity);
+                overridePendingTransition(R.transition.anim_cut,R.transition.anim_cut);
+            }
+        });
     }
 
 

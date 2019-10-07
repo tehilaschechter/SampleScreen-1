@@ -11,9 +11,10 @@
         android:id="@+id/btnAppHome"
         android:layout_width="@dimen/dimen_homeWidth"
         android:layout_height="@dimen/dimen_homeHeight"
+        android:layout_marginStart="13dp"
         android:background="@drawable/icon_home"
         android:backgroundTint="@color/color_Primary"
-        app:layout_constraintBottom_toBottomOf="@+id/txtAppName2"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toStartOf="@+id/txtAppName2"
         app:layout_constraintHorizontal_bias="0.19"
         app:layout_constraintStart_toStartOf="parent" />
@@ -29,37 +30,23 @@
         tools:layout_editor_absoluteX="4dp"
         tools:layout_editor_absoluteY="54dp" />
 
-    <TextView
-        android:id="@+id/txtAppName1"
-        style="@style/style_app_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name1"
-        android:textColor="@color/color_Primary"
-        app:layout_constraintBottom_toTopOf="@+id/txtAppName2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/txtAppName2"
-        style="@style/style_app_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="18dp"
-        android:fontFamily="serif"
-        android:text="@string/app_name2"
-        android:textColor="@color/color_Primary"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="133dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="25dp"
+        android:src="@drawable/logo"
         app:layout_constraintBottom_toTopOf="@+id/frameLayout"
-        app:layout_constraintEnd_toEndOf="@+id/txtAppName1"
-        app:layout_constraintStart_toStartOf="@+id/txtAppName1" />
+        app:layout_constraintEnd_toStartOf="@+id/btnMenu"
+        app:layout_constraintStart_toEndOf="@+id/btnAppHome" />
 
     <Button
         android:id="@+id/btnMenu"
         android:layout_width="@dimen/dimen_homeWidth"
         android:layout_height="@dimen/dimen_hamburgerHeight"
+        android:layout_marginEnd="13dp"
         android:background="@drawable/icon_hamburger"
-        app:layout_constraintBottom_toBottomOf="@+id/txtAppName2"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.81"
         app:layout_constraintStart_toEndOf="@+id/txtAppName2" />
