@@ -11,7 +11,7 @@
 
     <!--BUTTON DIMENS-->
     <dimen name="dimen_filledButtonWidth">275dp</dimen>
-    <dimen name="dimen_filledButtonHeight">36.5dp</dimen>
+    <dimen name="dimen_filledButtonHeight">36dp</dimen>
 
     <dimen name="dimen_scrollWidth">14dp</dimen>
     <dimen name="dimen_scrollHeight">14dp</dimen>
