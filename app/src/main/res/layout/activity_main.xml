@@ -18,6 +18,17 @@
         app:layout_constraintHorizontal_bias="0.19"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <Button
+        android:id="@+id/btnHomeLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stateListAnimator="@null"
+        android:backgroundTint="#00FFFFFF"
+        android:drawableStart="@drawable/icon_scroll_down"
+        android:drawableTint="@color/color_Primary"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="54dp" />
+
     <TextView
         android:id="@+id/txtAppName1"
         style="@style/style_app_name"
@@ -103,7 +114,8 @@
             android:layout_height="227dp"
             android:layout_gravity="center_horizontal|center_vertical"
             android:contentDescription="@string/descProfileImage"
-            android:src="@drawable/man" />
+            android:src="@drawable/man"
+            tools:srcCompat="@tools:sample/avatars" />
     </FrameLayout>
 
     <Button
@@ -202,7 +214,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.6" />
+        app:layout_constraintGuide_percent="0.59" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glnButtonsBottom"

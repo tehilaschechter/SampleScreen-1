@@ -13,7 +13,6 @@
         android:layout_height="@dimen/dimen_homeHeight"
         android:layout_marginEnd="70dp"
         android:background="@drawable/icon_home"
-        app:chainUseRtl="false"
         app:layout_constraintBottom_toBottomOf="@+id/txtAppName2"
         app:layout_constraintEnd_toStartOf="@+id/txtAppName2"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -36,7 +35,7 @@
         style="@style/style_app_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="25dp"
         android:fontFamily="serif"
         android:text="@string/app_name2"
         android:textColor="@color/color_circleOutline"
@@ -61,7 +60,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="77dp" />
+        app:layout_constraintGuide_begin="62dp" />
 
     <TextView
         android:id="@+id/txtParents"

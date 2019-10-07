@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Parents"></activity>
+        <activity android:name=".Childhood"></activity>
+        <activity android:name=".Parents" />
         <activity android:name=".Family" />
         <activity android:name=".Child" />
         <activity android:name=".MainActivity">

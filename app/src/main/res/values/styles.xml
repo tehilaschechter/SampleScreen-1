@@ -11,7 +11,7 @@
     <!--TEXT STYLES-->
     <style name="style_heading1">
         <item name="android:textColor">@color/color_bodyText</item>
-        <item name="android:fontFamily">@font/opensans_bold</item>
+        <item name="android:fontFamily">@font/font_view_body_semibold</item>
         <item name="android:textSize">@dimen/dimen_heading1</item>
     </style>
 
