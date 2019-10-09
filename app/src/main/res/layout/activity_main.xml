@@ -19,17 +19,6 @@
         app:layout_constraintHorizontal_bias="0.19"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/btnHomeLarge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:stateListAnimator="@null"
-        android:backgroundTint="#00FFFFFF"
-        android:drawableStart="@drawable/icon_scroll_down"
-        android:drawableTint="@color/color_Primary"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="54dp" />
-
     <ImageView
         android:id="@+id/imgLogo"
         android:layout_width="133dp"
