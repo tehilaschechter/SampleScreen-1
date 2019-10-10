@@ -8,15 +8,12 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btnAppHome"
+        android:id="@+id/btnMenu"
         android:layout_width="@dimen/dimen_homeWidth"
-        android:layout_height="@dimen/dimen_homeHeight"
-        android:layout_marginStart="13dp"
-        android:background="@drawable/icon_home"
-        android:backgroundTint="@color/color_Primary"
+        android:layout_height="@dimen/dimen_hamburgerHeight"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/icon_hamburger"
         app:layout_constraintBottom_toBottomOf="@+id/imgLogo"
-        app:layout_constraintEnd_toStartOf="@+id/txtAppName2"
-        app:layout_constraintHorizontal_bias="0.19"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
@@ -25,20 +22,19 @@
         android:layout_height="29dp"
         android:layout_marginTop="@dimen/dimen_header_drop_S8"
         android:src="@drawable/logo"
-        app:layout_constraintEnd_toStartOf="@+id/btnMenu"
-        app:layout_constraintStart_toEndOf="@+id/btnAppHome"
+        app:layout_constraintEnd_toStartOf="@+id/btnAppHome"
+        app:layout_constraintStart_toEndOf="@+id/btnMenu"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnMenu"
+        android:id="@+id/btnAppHome"
         android:layout_width="@dimen/dimen_homeWidth"
-        android:layout_height="@dimen/dimen_hamburgerHeight"
-        android:layout_marginEnd="13dp"
-        android:background="@drawable/icon_hamburger"
+        android:layout_height="@dimen/dimen_homeHeight"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/icon_home"
+        android:backgroundTint="@color/color_Primary"
         app:layout_constraintBottom_toBottomOf="@+id/imgLogo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.81"
-        app:layout_constraintStart_toEndOf="@+id/txtAppName2" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/txtProfileName"

@@ -9,14 +9,13 @@
     tools:context=".Child">
 
     <Button
-        android:id="@+id/btnAppHome"
+        android:id="@+id/btnMenu"
         android:layout_width="@dimen/dimen_homeWidth"
-        android:layout_height="@dimen/dimen_homeHeight"
+        android:layout_height="@dimen/dimen_hamburgerHeight"
         android:layout_marginStart="10dp"
-        android:background="@drawable/icon_home"
+        android:background="@drawable/icon_hamburger"
         app:layout_constraintBottom_toBottomOf="@+id/imgLogo"
         app:layout_constraintStart_toStartOf="parent" />
-
 
     <ImageView
         android:id="@+id/imgLogo"
@@ -24,17 +23,16 @@
         android:layout_height="29dp"
         android:layout_marginTop="@dimen/dimen_header_drop_S8"
         android:src="@drawable/logo"
-        app:layout_constraintEnd_toStartOf="@+id/btnMenu"
-        app:layout_constraintStart_toEndOf="@+id/btnAppHome"
+        app:layout_constraintEnd_toStartOf="@+id/btnAppHome"
+        app:layout_constraintStart_toEndOf="@+id/btnMenu"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnMenu"
+        android:id="@+id/btnAppHome"
         android:layout_width="@dimen/dimen_homeWidth"
-        android:layout_height="@dimen/dimen_hamburgerHeight"
+        android:layout_height="@dimen/dimen_homeHeight"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/icon_hamburger"
+        android:background="@drawable/icon_home"
         app:layout_constraintBottom_toBottomOf="@+id/imgLogo"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -49,7 +47,7 @@
         app:layout_constraintBottom_toTopOf="@+id/frameLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAppName2"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo"
         app:layout_constraintVertical_bias="0.95" />
 
     <FrameLayout
