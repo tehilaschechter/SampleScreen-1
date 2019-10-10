@@ -21,11 +21,11 @@
         android:id="@+id/imgLogo"
         android:layout_width="133dp"
         android:layout_height="29dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginTop="@dimen/dimen_header_drop_S8"
         android:src="@drawable/logo"
-        app:layout_constraintBottom_toTopOf="@+id/glnTop"
         app:layout_constraintEnd_toStartOf="@+id/btnMenu"
-        app:layout_constraintStart_toEndOf="@+id/btnAppHome" />
+        app:layout_constraintStart_toEndOf="@+id/btnAppHome"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnMenu"

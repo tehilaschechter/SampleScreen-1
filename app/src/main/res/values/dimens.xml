@@ -27,4 +27,5 @@
     <!--OTHER-->
     <dimen name="dimen_centerMediaButtonText">60dp</dimen>
     <dimen name="dimen_mediaButtonRight">-10dp</dimen>
+    <dimen name="dimen_header_drop_S8">15dp</dimen>
 </resources>
