@@ -2,8 +2,195 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lytConstraint"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/color_backgroundViewSub"
     tools:context=".Parent">
+
+    <Button
+        android:id="@+id/btnMenu"
+        android:layout_width="@dimen/dimen_homeWidth"
+        android:layout_height="@dimen/dimen_hamburgerHeight"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/icon_hamburger"
+        app:layout_constraintBottom_toBottomOf="@+id/imgLogo"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="133dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="@dimen/dimen_header_drop_S8"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toStartOf="@+id/btnAppHome"
+        app:layout_constraintStart_toEndOf="@+id/btnMenu"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAppHome"
+        android:layout_width="@dimen/dimen_homeWidth"
+        android:layout_height="@dimen/dimen_homeHeight"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/icon_home"
+        app:layout_constraintBottom_toBottomOf="@+id/imgLogo"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtFamily"
+        style="@style/style_categoryHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtParents"
+        android:translationY="-6dp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo"
+        app:layout_constraintVertical_bias="0.95" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="204dp"
+        android:layout_height="201dp"
+        android:background="@drawable/transparent_circle_background"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/glnImageTop">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgChildPicture"
+            android:layout_width="190dp"
+            android:layout_height="184dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:contentDescription="@string/descProfileImage"
+            android:src="@drawable/parent1" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnChildhood"
+        style="@style/style_filled_button_sub"
+        android:layout_width="0dp"
+        android:background="@drawable/rect_rounded_button"
+        android:drawableEnd="@drawable/video_icon"
+        android:paddingLeft="@dimen/dimen_centerMediaButtonText"
+        android:paddingRight="@dimen/dimen_mediaButtonRight"
+        android:text="@string/btnChildhood"
+        app:layout_constraintBottom_toTopOf="@+id/btnHometown"
+        app:layout_constraintEnd_toStartOf="@+id/glnButtonsRight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/glnButtonsLeft"
+        app:layout_constraintTop_toTopOf="@+id/glnButtonsTop" />
+
+    <Button
+        android:id="@+id/btnHometown"
+        style="@style/style_filled_button_sub"
+        android:layout_width="0dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rect_rounded_button"
+        android:drawableEnd="@drawable/camera_icon"
+        android:paddingLeft="@dimen/dimen_centerMediaButtonText"
+        android:paddingRight="@dimen/dimen_mediaButtonRight"
+        android:text="Hometown"
+        app:layout_constraintBottom_toTopOf="@+id/btnWeddingDay"
+        app:layout_constraintEnd_toStartOf="@+id/glnButtonsRight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/glnButtonsLeft"
+        app:layout_constraintTop_toBottomOf="@+id/btnChildhood" />
+
+    <Button
+        android:id="@+id/btnWeddingDay"
+        style="@style/style_filled_button_sub"
+        android:layout_width="0dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rect_rounded_button"
+        android:drawableEnd="@drawable/video_icon"
+        android:paddingLeft="@dimen/dimen_centerMediaButtonText"
+        android:paddingRight="@dimen/dimen_mediaButtonRight"
+        android:text="@string/btnWeddingDay"
+        app:layout_constraintBottom_toTopOf="@+id/btnFavoriteMemories"
+        app:layout_constraintEnd_toStartOf="@+id/glnButtonsRight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/glnButtonsLeft"
+        app:layout_constraintTop_toBottomOf="@+id/btnHometown" />
+
+    <Button
+        android:id="@+id/btnFavoriteMemories"
+        android:background="@drawable/rect_rounded_button"
+        style="@style/style_filled_button_sub"
+        android:layout_width="0dp"
+        android:layout_marginTop="15dp"
+        android:drawableEnd="@drawable/video_icon"
+        android:paddingLeft="@dimen/dimen_centerMediaButtonText"
+        android:paddingRight="@dimen/dimen_mediaButtonRight"
+        android:text="Favorite Memories"
+        app:layout_constraintBottom_toTopOf="@+id/glnButtonsBottom"
+        app:layout_constraintEnd_toStartOf="@+id/glnButtonsRight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/glnButtonsLeft"
+        app:layout_constraintTop_toBottomOf="@+id/btnWeddingDay" />
+
+    <TextView
+        android:id="@+id/txtParentBirthday"
+        style="@style/style_heading2"
+        android:textColor="@color/colorWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Born 1897"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtParentName" />
+
+    <TextView
+        android:id="@+id/txtParentName"
+        style="@style/style_categorySubHeading"
+        android:textColor="@color/colorWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Yaakov Grey"
+        app:layout_constraintBottom_toTopOf="@+id/glnButtonsTop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        app:layout_constraintVertical_bias="0.07999998" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glnButtonsLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.12722646" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glnButtonsRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8727735" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glnButtonsTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.59" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glnButtonsBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.86" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glnImageTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -31,7 +31,7 @@ public class Family extends AppCompatActivity {
         });
 
         btnChildren.setOnClickListener(new View.OnClickListener(){
-            Intent intNextActivity = new Intent(Family.this, Child.class);
+            Intent intNextActivity = new Intent(Family.this, Children.class);
             @Override
             public void onClick(View v) {
                 startActivity(intNextActivity);

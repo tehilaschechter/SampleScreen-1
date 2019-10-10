@@ -76,7 +76,7 @@
             android:layout_gravity="center_horizontal|center_vertical"
             android:clickable="true"
             android:contentDescription="@string/descProfileImage"
-            android:src="@drawable/baby" />
+            android:src="@drawable/parent1" />
 
     </FrameLayout>
 
@@ -126,7 +126,7 @@
             android:layout_gravity="center_horizontal|center_vertical"
             android:clickable="true"
             android:contentDescription="@string/descProfileImage"
-            android:src="@drawable/baby" />
+            android:src="@drawable/parent2" />
     </FrameLayout>
 
     <TextView
