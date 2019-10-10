@@ -29,4 +29,11 @@ public class Spouse extends AppCompatActivity {
         gradientDrawable.setColor(ContextCompat.getColor(this,R.color.color_female));
 
     }
+
+    // Configure back button animation
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Spouse.this.overridePendingTransition(R.transition.anim_cut,R.transition.anim_cut);
+    }
 }

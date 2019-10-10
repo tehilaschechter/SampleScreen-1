@@ -62,5 +62,12 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    // Configure back button animation
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        MainActivity.this.overridePendingTransition(R.transition.anim_cut,R.transition.anim_cut);
+    }
+
 
 }

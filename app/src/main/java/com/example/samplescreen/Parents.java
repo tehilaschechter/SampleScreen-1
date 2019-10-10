@@ -38,4 +38,11 @@ public class Parents extends AppCompatActivity {
             }
         });
     }
+
+    // Configure back button animation
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Parents.this.overridePendingTransition(R.transition.anim_cut,R.transition.anim_cut);
+    }
 }

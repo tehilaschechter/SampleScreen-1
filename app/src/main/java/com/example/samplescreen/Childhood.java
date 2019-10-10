@@ -11,4 +11,11 @@ public class Childhood extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_childhood);
     }
+
+    //Configure back button animation
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Childhood.this.overridePendingTransition(R.transition.anim_cut,R.transition.anim_cut);
+    }
 }
