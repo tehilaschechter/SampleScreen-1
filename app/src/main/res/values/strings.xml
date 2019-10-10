@@ -29,5 +29,12 @@
 
     <!--DESCRIPTION STRINGS-->
     <string name="descProfileImage">Profile Image</string>
+    <string name="descParentImage">Parent Image</string>
+    <string name="descChildhoodImage">Childhood Image</string>
+    <string name="descWisdomImage">Wisdom Image</string>
+    <string name="descWorkImage">Work Image</string>
+    <string name="descSpouseImage">Spouse Image</string>
+    <string name="descFamilyImage">Family Image</string>
+    <string name="descChildImage">Child Image</string>
 
 </resources>

@@ -114,7 +114,7 @@
             android:layout_width="190dp"
             android:layout_height="184dp"
             android:layout_gravity="center_horizontal|center_vertical"
-            android:contentDescription="@string/descProfileImage"
+            android:contentDescription="@string/descChildImage"
             android:src="@drawable/baby" />
 
     </FrameLayout>
