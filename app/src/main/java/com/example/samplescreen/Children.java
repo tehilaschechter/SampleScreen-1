@@ -29,7 +29,7 @@ public class Children extends AppCompatActivity {
         });
 
         imgChild2.setOnClickListener(new View.OnClickListener() {
-            Intent intNextActivity = new Intent(Children.this, Parent.class);
+            Intent intNextActivity = new Intent(Children.this, Child.class);
             @Override
             public void onClick(View v) {
                 startActivity(intNextActivity);
