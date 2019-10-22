@@ -16,8 +16,8 @@
     <dimen name="dimen_scrollWidth">14dp</dimen>
     <dimen name="dimen_scrollHeight">14dp</dimen>
 
-    <dimen name="dimen_homeWidth">30dp</dimen>
-    <dimen name="dimen_homeHeight">25dp</dimen>
+    <dimen name="dimen_homeWidth">40dp</dimen>
+    <dimen name="dimen_homeHeight">35dp</dimen>
     <dimen name="dimen_hamburgerHeight">20dp</dimen>
 
     <dimen name="dimen_mediaIconWidth">60dp</dimen>

@@ -23,16 +23,17 @@
         android:layout_height="29dp"
         android:layout_marginTop="@dimen/dimen_header_drop_S8"
         android:src="@drawable/logo"
-        app:layout_constraintEnd_toStartOf="@+id/btnAppHome"
+        app:layout_constraintEnd_toStartOf="@+id/btnProfileHome"
         app:layout_constraintStart_toEndOf="@+id/btnMenu"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btnAppHome"
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/btnProfileHome"
         android:layout_width="@dimen/dimen_homeWidth"
         android:layout_height="@dimen/dimen_homeHeight"
         android:layout_marginEnd="10dp"
-        android:background="@drawable/icon_home"
+        android:contentDescription="@string/descProfileImage"
+        android:src="@drawable/man"
         app:layout_constraintBottom_toBottomOf="@+id/imgLogo"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -63,12 +64,12 @@
         app:layout_constraintStart_toStartOf="@+id/glnButtonsLeft">
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/imgChildPicture"
+            android:id="@+id/imgWorkPicture"
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_gravity="center_horizontal|center_vertical"
             android:contentDescription="@string/descWorkImage"
-            android:src="@drawable/baby" />
+            android:src="@drawable/work"/>
 
     </FrameLayout>
 

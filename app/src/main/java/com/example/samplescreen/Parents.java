@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 public class Parents extends AppCompatActivity {
+    ImageView imgProfileHome;
     ImageView imgParent1;
     ImageView imgParent2;
 
@@ -17,8 +18,18 @@ public class Parents extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_parents);
 
+        imgProfileHome = (ImageView)findViewById(R.id.btnProfileHome);
         imgParent1 = (ImageView)findViewById(R.id.imgParent1);
         imgParent2 = (ImageView)findViewById(R.id.imgParent2);
+
+        imgProfileHome.setOnClickListener(new View.OnClickListener() {
+            Intent intNextActivity = new Intent(Parents.this, MainActivity.class);
+            @Override
+            public void onClick(View v) {
+                startActivity(intNextActivity);
+                overridePendingTransition(R.transition.anim_cut,R.transition.anim_cut);
+            }
+        });
 
         imgParent1.setOnClickListener(new View.OnClickListener() {
             Intent intNextActivity = new Intent(Parents.this, Parent.class);
