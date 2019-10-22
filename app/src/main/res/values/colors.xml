@@ -11,7 +11,12 @@
     <!--BACKGROUND COLORS-->
     <color name="color_backgroundViewHome">#F1B143</color>
     <color name="color_backgroundViewSub">#B36100</color>
-    <color name="color_backgroundViewFinal">#758D00</color>
+    <color name="color_backgroundViewCategory">#758D00</color>
+
+    <color name="color_filledButtonSub">#f1b143</color>
+    <color name="color_filledButtonCategory">#DBE77A</color>
+
+    <color name="color_female">#EF6B69</color>
 
     <!--GRADIENT COLORS-->
     <color name="color_mediaGradientTop">#765206</color>

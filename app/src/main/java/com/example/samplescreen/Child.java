@@ -7,24 +7,18 @@ import android.view.View;
 import android.widget.Button;
 
 public class Child extends AppCompatActivity {
-    Button btnBirth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_child);
 
+    }
 
-        btnBirth = (Button)findViewById(R.id.btnBirth);
-
-        /*btnBirth.setOnClickListener(new View.OnClickListener(){
-            Intent intNextActivity = new Intent(JPGBackground.this, child.class);
-
-
-            @Override
-            public void onClick(View v) {
-                startActivity(intNextActivity);
-            }
-        });*/
+    // Configure back button animation
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Child.this.overridePendingTransition(R.transition.anim_cut,R.transition.anim_cut);
     }
 }

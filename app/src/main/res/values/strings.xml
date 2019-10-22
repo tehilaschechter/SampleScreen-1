@@ -1,10 +1,13 @@
 <resources>
     <!--TEXT STRINGS-->
-    <string name="app_name">Sample Screen</string>
-    <string name="app_name1">IT IS MY</string>
-    <string name="app_name2">EXPERIENCE</string>
+    <string name="app_name">It Is My Experience</string>
     <string name="txtChildren">Children</string>
     <string name="txtFamily">Family</string>
+    <string name="txtParents">Parents</string>
+    <string name="txtChildhood">Childhood</string>
+    <string name="txtWork">Work</string>
+    <string name="txtSpouse">Spouse</string>
+    <string name="txtWisdom">Wisdom</string>
 
 
     <!--BUTTON STRINGS-->
@@ -26,5 +29,12 @@
 
     <!--DESCRIPTION STRINGS-->
     <string name="descProfileImage">Profile Image</string>
+    <string name="descParentImage">Parent Image</string>
+    <string name="descChildhoodImage">Childhood Image</string>
+    <string name="descWisdomImage">Wisdom Image</string>
+    <string name="descWorkImage">Work Image</string>
+    <string name="descSpouseImage">Spouse Image</string>
+    <string name="descFamilyImage">Family Image</string>
+    <string name="descChildImage">Child Image</string>
 
 </resources>

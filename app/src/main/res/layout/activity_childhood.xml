@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lytConstraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_backgroundViewCategory"
+    tools:context=".Child">
+
+    <Button
+        android:id="@+id/btnMenu"
+        android:layout_width="@dimen/dimen_homeWidth"
+        android:layout_height="@dimen/dimen_hamburgerHeight"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/icon_hamburger"
+        app:layout_constraintBottom_toBottomOf="@+id/imgLogo"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="133dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="@dimen/dimen_header_drop_S8"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toStartOf="@+id/btnAppHome"
+        app:layout_constraintStart_toEndOf="@+id/btnMenu"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAppHome"
+        android:layout_width="@dimen/dimen_homeWidth"
+        android:layout_height="@dimen/dimen_homeHeight"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/icon_home"
+        app:layout_constraintBottom_toBottomOf="@+id/imgLogo"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtChildhood"
+        style="@style/style_categoryHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtChildhood"
+        android:translationY="-6dp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="213dp"
+        android:layout_height="213dp"
+        android:background="@drawable/transparent_circle_background"
+        android:backgroundTint="@color/color_filledButtonCategory"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/glnImageTop">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgChildPicture"
+            android:layout_width="198dp"
+            android:layout_height="198dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:contentDescription="@string/descChildhoodImage"
+            android:src="@drawable/baby" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnFirstMemory"
+        style="@style/style_filled_button_category"
+        android:layout_width="0dp"
+        android:background="@drawable/rect_rounded_button"
+        android:drawableEnd="@drawable/camera_icon"
+        android:paddingLeft="@dimen/dimen_centerMediaButtonText"
+        android:paddingRight="@dimen/dimen_mediaButtonRight"
+        android:text="First Memory"
+        app:layout_constraintBottom_toTopOf="@+id/btnFirstHome"
+        app:layout_constraintEnd_toStartOf="@+id/glnButtonsRight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/glnButtonsLeft"
+        app:layout_constraintTop_toBottomOf="@+id/glnButtonsTop"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <Button
+        android:id="@+id/btnFirstHome"
+        style="@style/style_filled_button_category"
+        android:layout_width="0dp"
+        android:background="@drawable/rect_rounded_button"
+        android:drawableEnd="@drawable/video_icon"
+        android:paddingLeft="@dimen/dimen_centerMediaButtonText"
+        android:paddingRight="@dimen/dimen_mediaButtonRight"
+        android:text="First Home"
+        app:layout_constraintBottom_toTopOf="@+id/btnFear"
+        app:layout_constraintEnd_toStartOf="@+id/glnButtonsRight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/glnButtonsLeft"
+        app:layout_constraintTop_toBottomOf="@+id/btnFirstMemory" />
+
+    <Button
+        android:id="@+id/btnFear"
+        style="@style/style_filled_button_category"
+        android:layout_width="0dp"
+        android:background="@drawable/rect_rounded_button"
+        android:drawableEnd="@drawable/video_icon"
+        android:paddingLeft="@dimen/dimen_centerMediaButtonText"
+        android:paddingRight="@dimen/dimen_mediaButtonRight"
+        android:text="Fear"
+        app:layout_constraintBottom_toTopOf="@+id/btnDream"
+        app:layout_constraintEnd_toStartOf="@+id/glnButtonsRight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/glnButtonsLeft"
+        app:layout_constraintTop_toBottomOf="@+id/btnFirstHome" />
+
+    <Button
+        android:id="@+id/btnDream"
+        style="@style/style_filled_button_category"
+        android:layout_width="0dp"
+        android:background="@drawable/rect_rounded_button"
+        android:drawableEnd="@drawable/video_icon"
+        android:paddingLeft="@dimen/dimen_centerMediaButtonText"
+        android:paddingRight="@dimen/dimen_mediaButtonRight"
+        android:text="Dream"
+        app:layout_constraintBottom_toTopOf="@+id/glnButtonsBottom"
+        app:layout_constraintEnd_toStartOf="@+id/glnButtonsRight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/glnButtonsLeft"
+        app:layout_constraintTop_toBottomOf="@+id/btnFear" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glnButtonsLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.12722646" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glnButtonsRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8727735" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glnButtonsTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glnButtonsBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.84" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glnImageTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

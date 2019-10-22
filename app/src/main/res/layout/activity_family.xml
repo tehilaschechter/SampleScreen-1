@@ -5,97 +5,76 @@
     android:id="@+id/lytConstraint"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color_backgroundViewFinal"
+    android:background="@color/color_backgroundViewCategory"
     tools:context=".Child">
-
-    <Button
-        android:id="@+id/btnAppHome"
-        android:layout_width="@dimen/dimen_homeWidth"
-        android:layout_height="@dimen/dimen_homeHeight"
-        android:background="@drawable/icon_home"
-        app:layout_constraintBaseline_toBaselineOf="@+id/txtAppName2"
-        app:layout_constraintEnd_toStartOf="@+id/txtAppName2"
-        app:layout_constraintHorizontal_bias="0.19"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/txtAppName1"
-        style="@style/style_app_name"
-        android:textColor="@color/colorWhite"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name1"
-        app:layout_constraintBottom_toTopOf="@+id/txtAppName2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/txtAppName2"
-        style="@style/style_app_name"
-        android:textColor="@color/colorWhite"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
-        android:text="@string/app_name2"
-        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
-        app:layout_constraintEnd_toEndOf="@+id/txtAppName1"
-        app:layout_constraintStart_toStartOf="@+id/txtAppName1" />
 
     <Button
         android:id="@+id/btnMenu"
         android:layout_width="@dimen/dimen_homeWidth"
         android:layout_height="@dimen/dimen_hamburgerHeight"
+        android:layout_marginStart="10dp"
         android:background="@drawable/icon_hamburger"
-        app:layout_constraintBaseline_toBaselineOf="@+id/txtAppName2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.81"
-        app:layout_constraintStart_toEndOf="@+id/txtAppName2" />
+        app:layout_constraintBottom_toBottomOf="@+id/imgLogo"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="133dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="@dimen/dimen_header_drop_S8"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toStartOf="@+id/btnAppHome"
+        app:layout_constraintStart_toEndOf="@+id/btnMenu"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAppHome"
+        android:layout_width="@dimen/dimen_homeWidth"
+        android:layout_height="@dimen/dimen_homeHeight"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/icon_home"
+        app:layout_constraintBottom_toBottomOf="@+id/imgLogo"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/txtFamily"
         style="@style/style_categoryHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="5dp"
         android:text="@string/txtFamily"
         android:translationY="-6dp"
         app:layout_constraintBottom_toTopOf="@+id/frameLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAppName2"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo"
         app:layout_constraintVertical_bias="0.95" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/glnImageTop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.11592357" />
 
     <FrameLayout
         android:id="@+id/frameLayout"
-        android:layout_width="204dp"
-        android:layout_height="0dp"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
         android:background="@drawable/transparent_circle_background"
+        android:backgroundTint="@color/color_filledButtonCategory"
         android:padding="5dp"
         app:layout_constraintBottom_toTopOf="@+id/glnImageBottom"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/glnImageTop">
+        app:layout_constraintEnd_toStartOf="@+id/glnButtonsRight"
+        app:layout_constraintStart_toStartOf="@+id/glnButtonsLeft">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/imgChildPicture"
-            android:layout_width="190dp"
-            android:layout_height="184dp"
+            android:layout_width="196dp"
+            android:layout_height="196dp"
             android:layout_gravity="center_horizontal|center_vertical"
-            android:contentDescription="@string/descProfileImage"
+            android:contentDescription="@string/descFamilyImage"
             android:src="@drawable/baby" />
 
     </FrameLayout>
 
     <Button
         android:id="@+id/btnSpouse"
-        style="@style/style_filled_button"
+        style="@style/style_filled_button_category"
         android:layout_width="0dp"
         android:background="@drawable/rect_rounded_button"
         android:text="@string/btnSpouse"
@@ -107,7 +86,7 @@
 
     <Button
         android:id="@+id/btnChildren"
-        style="@style/style_filled_button"
+        style="@style/style_filled_button_category"
         android:layout_width="0dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/rect_rounded_button"
@@ -120,7 +99,7 @@
 
     <Button
         android:id="@+id/btnParents"
-        style="@style/style_filled_button"
+        style="@style/style_filled_button_category"
         android:layout_width="0dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/rect_rounded_button"
@@ -149,21 +128,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.48280254" />
+        app:layout_constraintGuide_percent="0.55" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glnButtonsBottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.73757964" />
+        app:layout_constraintGuide_percent="0.87" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glnImageBottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.37834394" />
+        app:layout_constraintGuide_percent="0.47" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,24 +8,87 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btnAppHome"
-        android:layout_width="@dimen/dimen_homeWidth"
-        android:layout_height="@dimen/dimen_homeHeight"
-        android:background="@drawable/icon_home"
-        app:layout_constraintBottom_toBottomOf="@+id/txtAppName2"
-        app:layout_constraintEnd_toStartOf="@+id/txtAppName2"
-        app:layout_constraintHorizontal_bias="0.19"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
         android:id="@+id/btnMenu"
         android:layout_width="@dimen/dimen_homeWidth"
         android:layout_height="@dimen/dimen_hamburgerHeight"
+        android:layout_marginStart="10dp"
         android:background="@drawable/icon_hamburger"
-        app:layout_constraintBottom_toBottomOf="@+id/txtAppName2"
+        app:layout_constraintBottom_toBottomOf="@+id/imgLogo"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="133dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="@dimen/dimen_header_drop_S8"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toStartOf="@+id/btnAppHome"
+        app:layout_constraintStart_toEndOf="@+id/btnMenu"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAppHome"
+        android:layout_width="@dimen/dimen_homeWidth"
+        android:layout_height="@dimen/dimen_homeHeight"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/icon_home"
+        android:backgroundTint="@color/color_Primary"
+        app:layout_constraintBottom_toBottomOf="@+id/imgLogo"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtProfileName"
+        style="@style/style_heading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Dr. Adam Jonathan Grey"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.81"
-        app:layout_constraintStart_toEndOf="@+id/txtAppName2" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+    <TextView
+        android:id="@+id/txtProfileLocation"
+        style="@style/style_heading2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Philadelphia, USA"
+        app:layout_constraintEnd_toEndOf="@+id/txtProfileName"
+        app:layout_constraintStart_toStartOf="@+id/txtProfileName"
+        app:layout_constraintTop_toBottomOf="@+id/txtProfileName" />
+
+    <TextView
+        android:id="@+id/txtProfileDateOfBirth"
+        style="@style/style_heading2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="1937"
+        app:layout_constraintEnd_toEndOf="@+id/txtProfileLocation"
+        app:layout_constraintStart_toStartOf="@+id/txtProfileLocation"
+        app:layout_constraintTop_toBottomOf="@+id/txtProfileLocation" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="239dp"
+        android:layout_height="243dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/circle_background"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgProfilePicture"
+            android:layout_width="220dp"
+            android:layout_height="227dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:contentDescription="@string/descProfileImage"
+            android:src="@drawable/man"
+            tools:srcCompat="@tools:sample/avatars" />
+    </FrameLayout>
 
     <Button
         android:id="@+id/btnChildhood"
@@ -84,101 +147,25 @@
         android:id="@+id/btnScrollDown"
         android:layout_width="@dimen/dimen_scrollWidth"
         android:layout_height="@dimen/dimen_scrollHeight"
+        android:layout_marginTop="20dp"
         android:background="@drawable/icon_scroll_down"
         app:layout_constraintEnd_toStartOf="@+id/btnScrollUp"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="@+id/glnButtonsLeft"
-        tools:layout_editor_absoluteY="606dp" />
+        app:layout_constraintTop_toTopOf="@+id/glnButtonsBottom" />
 
     <Button
         android:id="@+id/btnScrollUp"
         android:layout_width="@dimen/dimen_scrollWidth"
         android:layout_height="@dimen/dimen_scrollHeight"
         android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/icon_scroll_up"
         app:layout_constraintEnd_toStartOf="@+id/glnButtonsRight"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btnScrollDown"
-        tools:layout_editor_absoluteY="606dp" />
-
-    <FrameLayout
-        android:id="@+id/frameLayout"
-        android:layout_width="239dp"
-        android:layout_height="243dp"
-        android:layout_marginTop="60dp"
-        android:background="@drawable/circle_background"
-        android:padding="5dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/imgProfilePicture"
-            android:layout_width="220dp"
-            android:layout_height="227dp"
-            android:layout_gravity="center_horizontal|center_vertical"
-            android:contentDescription="@string/descProfileImage"
-            android:src="@drawable/man" />
-    </FrameLayout>
-
-    <TextView
-        android:id="@+id/txtAppName1"
-        style="@style/style_app_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name1"
-        android:textColor="@color/color_Primary"
-        app:layout_constraintBottom_toTopOf="@+id/txtAppName2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/txtAppName2"
-        style="@style/style_app_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="22dp"
-        android:fontFamily="serif"
-        android:text="@string/app_name2"
-        android:textColor="@color/color_Primary"
-        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
-        app:layout_constraintEnd_toEndOf="@+id/txtAppName1"
-        app:layout_constraintStart_toStartOf="@+id/txtAppName1" />
-
-    <TextView
-        android:id="@+id/txtProfileLocation"
-        style="@style/style_heading2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
-        android:text="Philadelphia, USA"
-        app:layout_constraintEnd_toEndOf="@+id/txtProfileName"
-        app:layout_constraintStart_toStartOf="@+id/txtProfileName"
-        app:layout_constraintTop_toBottomOf="@+id/txtProfileName" />
-
-    <TextView
-        android:id="@+id/txtProfileDateOfBirth"
-        style="@style/style_heading2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
-        android:text="1937"
-        app:layout_constraintEnd_toEndOf="@+id/txtProfileLocation"
-        app:layout_constraintStart_toStartOf="@+id/txtProfileLocation"
-        app:layout_constraintTop_toBottomOf="@+id/txtProfileLocation" />
-
-    <TextView
-        android:id="@+id/txtProfileName"
-        style="@style/style_heading1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:text="Dr. Adam Jonathan Grey"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+        app:layout_constraintTop_toTopOf="@+id/glnButtonsBottom" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glnButtonsLeft"
@@ -199,14 +186,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.5133758" />
+        app:layout_constraintGuide_percent="0.59" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glnButtonsBottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.75031847" />
+        app:layout_constraintGuide_percent="0.86" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
