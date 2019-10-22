@@ -65,7 +65,7 @@
             android:layout_height="198dp"
             android:layout_gravity="center_horizontal|center_vertical"
             android:contentDescription="@string/descChildhoodImage"
-            android:src="@drawable/childhood" />
+            android:src="@mipmap/childhood" />
 
     </FrameLayout>
 
