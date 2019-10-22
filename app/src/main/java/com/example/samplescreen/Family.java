@@ -65,6 +65,6 @@ public class Family extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Family.this.overridePendingTransition(R.transition.anim_push_in_right,R.transition.anim_push_out_left);
+        Family.this.overridePendingTransition(R.transition.anim_push_in_left,R.transition.anim_push_out_right);
     }
 }

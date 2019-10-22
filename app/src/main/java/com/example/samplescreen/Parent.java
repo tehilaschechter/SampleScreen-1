@@ -31,6 +31,6 @@ public class Parent extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        overridePendingTransition(R.transition.anim_push_in_right,R.transition.anim_push_out_left);
+        overridePendingTransition(R.transition.anim_push_in_left,R.transition.anim_push_out_right);
     }
 }

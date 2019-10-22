@@ -46,6 +46,6 @@ public class Spouse extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Spouse.this.overridePendingTransition(R.transition.anim_push_in_right,R.transition.anim_push_out_left);
+        Spouse.this.overridePendingTransition(R.transition.anim_push_in_left,R.transition.anim_push_out_right);
     }
 }

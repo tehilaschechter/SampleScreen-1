@@ -32,6 +32,6 @@ public class Work extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Work.this.overridePendingTransition(R.transition.anim_push_in_right,R.transition.anim_push_out_left);
+        Work.this.overridePendingTransition(R.transition.anim_push_in_left,R.transition.anim_push_out_right);
     }
 }
