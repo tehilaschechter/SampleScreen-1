@@ -35,7 +35,8 @@
         android:contentDescription="@string/descProfileImage"
         android:src="@drawable/man"
         app:layout_constraintBottom_toBottomOf="@+id/imgLogo"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:clickable="true"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glnTop"
@@ -57,16 +58,6 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/glnTop" />
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
 
     <FrameLayout
         android:id="@+id/frameLayout1"

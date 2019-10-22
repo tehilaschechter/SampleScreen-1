@@ -21,12 +21,12 @@ public class Children extends AppCompatActivity {
         imgChild1 = (ImageView)findViewById(R.id.imgChild1);
         imgChild2 = (ImageView)findViewById(R.id.imgChild2);
 
-        imgProfileHome.setOnClickListener(new View.OnClickListener(){
+        imgProfileHome.setOnClickListener(new View.OnClickListener() {
             Intent intNextActivity = new Intent(Children.this, MainActivity.class);
             @Override
             public void onClick(View v) {
                 startActivity(intNextActivity);
-                overridePendingTransition(R.transition.anim_cut,R.transition.anim_cut);
+                overridePendingTransition(R.transition.anim_push_in_right,R.transition.anim_push_out_left);
             }
         });
 
@@ -35,7 +35,7 @@ public class Children extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(intNextActivity);
-                overridePendingTransition(R.transition.anim_cut,R.transition.anim_cut);
+                overridePendingTransition(R.transition.anim_push_in_right,R.transition.anim_push_out_left);
             }
         });
 
@@ -44,7 +44,7 @@ public class Children extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(intNextActivity);
-                overridePendingTransition(R.transition.anim_cut,R.transition.anim_cut);
+                overridePendingTransition(R.transition.anim_push_in_right,R.transition.anim_push_out_left);
             }
         });
     }
@@ -53,6 +53,6 @@ public class Children extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Children.this.overridePendingTransition(R.transition.anim_cut,R.transition.anim_cut);
+        Children.this.overridePendingTransition(R.transition.anim_push_in_right,R.transition.anim_push_out_left);
     }
 }
