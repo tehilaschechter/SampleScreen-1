@@ -53,117 +53,137 @@
         android:layout_marginBottom="10dp"
         android:text="@string/txtChildren"
         android:translationY="-6dp"
-        app:layout_constraintBottom_toTopOf="@+id/frameLayout1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/glnTop" />
 
     <FrameLayout
-        android:id="@+id/frameLayout1"
-        android:layout_width="210dp"
-        android:layout_height="210dp"
-        android:background="@drawable/transparent_circle_background"
-        android:padding="5dp"
-        app:layout_constraintBottom_toTopOf="@+id/txtChild1Name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtChildren">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/imgChild1"
-            android:layout_width="195dp"
-            android:layout_height="195dp"
-            android:layout_gravity="center_horizontal|center_vertical"
-            android:clickable="true"
-            android:contentDescription="@string/descChildImage"
-            android:src="@drawable/boy" />
+        <ScrollView
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center_vertical">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/frameLayout1"
+                    android:layout_width="210dp"
+                    android:layout_height="210dp"
+                    android:background="@drawable/transparent_circle_background"
+                    android:padding="5dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgChild1"
+                        android:layout_width="195dp"
+                        android:layout_height="195dp"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:clickable="true"
+                        android:contentDescription="@string/descChildImage"
+                        android:src="@drawable/boy" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/txtChild1Name"
+                    style="@style/style_categorySubHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bob Grey"
+                    android:textColor="@color/colorWhite" />
+
+                <TextView
+                    android:id="@+id/txtChild1Birthday"
+                    style="@style/style_heading2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Born 1897"
+                    android:textColor="@color/colorWhite"
+                    android:translationY="-8dp" />
+
+                <FrameLayout
+                    android:id="@+id/frameLayout2"
+                    android:layout_width="210dp"
+                    android:layout_height="210dp"
+                    android:background="@drawable/transparent_circle_background"
+                    android:padding="5dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgChild2"
+                        android:layout_width="195dp"
+                        android:layout_height="195dp"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:clickable="true"
+                        android:contentDescription="@string/descChildImage"
+                        android:src="@drawable/girl" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/txtChild2Name"
+                    style="@style/style_categorySubHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emma Grey"
+                    android:textColor="@color/colorWhite" />
+
+                <TextView
+                    android:id="@+id/txtChild2Birthday"
+                    style="@style/style_heading2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Born 1901"
+                    android:textColor="@color/colorWhite"
+                    android:translationY="-8dp" />
+
+                <FrameLayout
+                    android:id="@+id/frameLayout3"
+                    android:layout_width="210dp"
+                    android:layout_height="210dp"
+                    android:background="@drawable/transparent_circle_background"
+                    android:padding="5dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgChild3"
+                        android:layout_width="195dp"
+                        android:layout_height="195dp"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:clickable="true"
+                        android:contentDescription="@string/descChildImage"
+                        android:src="@drawable/child3" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/txtChild3Name"
+                    style="@style/style_categorySubHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bella Grey"
+                    android:textColor="@color/colorWhite" />
+
+                <TextView
+                    android:id="@+id/txtChild3Birthday"
+                    style="@style/style_heading2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Born 1911"
+                    android:textColor="@color/colorWhite"
+                    android:translationY="-8dp" />
+            </LinearLayout>
+        </ScrollView>
     </FrameLayout>
-
-    <TextView
-        android:id="@+id/txtChild1Name"
-        style="@style/style_categorySubHeading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bob Grey"
-        android:textColor="@color/colorWhite"
-        app:layout_constraintBottom_toTopOf="@+id/txtChild1Birthday"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout1" />
-
-    <TextView
-        android:id="@+id/txtChild1Birthday"
-        style="@style/style_heading2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Born 1897"
-        android:textColor="@color/colorWhite"
-        android:translationY="-8dp"
-        app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtChild1Name" />
-
-    <FrameLayout
-        android:id="@+id/frameLayout2"
-        android:layout_width="210dp"
-        android:layout_height="210dp"
-        android:background="@drawable/transparent_circle_background"
-        android:padding="5dp"
-        app:layout_constraintBottom_toTopOf="@+id/txtChild2Name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtChild1Birthday">
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/imgChild2"
-            android:layout_width="195dp"
-            android:layout_height="195dp"
-            android:layout_gravity="center_horizontal|center_vertical"
-            android:clickable="true"
-            android:contentDescription="@string/descChildImage"
-            android:src="@drawable/girl" />
-    </FrameLayout>
-
-    <TextView
-        android:id="@+id/txtChild2Name"
-        style="@style/style_categorySubHeading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Emma Grey"
-        android:textColor="@color/colorWhite"
-        app:layout_constraintBottom_toTopOf="@+id/txtChild2Birthday"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout2" />
-
-    <TextView
-        android:id="@+id/txtChild2Birthday"
-        style="@style/style_heading2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Born 1901"
-        android:textColor="@color/colorWhite"
-        android:translationY="-8dp"
-        app:layout_constraintBottom_toTopOf="@+id/glnBottom"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtChild2Name" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/glnBottom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_end="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
