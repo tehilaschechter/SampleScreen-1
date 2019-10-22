@@ -68,7 +68,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtChildren">
 
         <ScrollView
-            android:layout_width="215dp"
+            android:layout_width="210dp"
             android:layout_height="match_parent"
             android:layout_gravity="center_horizontal|center_vertical"
             android:scrollbars="none">
