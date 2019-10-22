@@ -37,7 +37,7 @@ public class Spouse extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(intNextActivity);
-                overridePendingTransition(R.transition.anim_cut,R.transition.anim_cut);
+                overridePendingTransition(R.transition.anim_push_in_right,R.transition.anim_push_out_left);
             }
         });
     }
@@ -46,6 +46,6 @@ public class Spouse extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Spouse.this.overridePendingTransition(R.transition.anim_cut,R.transition.anim_cut);
+        Spouse.this.overridePendingTransition(R.transition.anim_push_in_right,R.transition.anim_push_out_left);
     }
 }
