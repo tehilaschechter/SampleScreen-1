@@ -69,7 +69,7 @@
             android:layout_height="200dp"
             android:layout_gravity="center_horizontal|center_vertical"
             android:contentDescription="@string/descWorkImage"
-            android:src="@drawable/work"/>
+            android:src="@mipmap/work" />
 
     </FrameLayout>
 
