@@ -42,7 +42,7 @@ public class Children extends AppCompatActivity {
         });
 
         imgChild2.setOnClickListener(new View.OnClickListener() {
-            Intent intNextActivity = new Intent(Children.this, Child.class);
+            Intent intNextActivity = new Intent(Children.this, Child2.class);
             @Override
             public void onClick(View v) {
                 startActivity(intNextActivity);
@@ -51,7 +51,7 @@ public class Children extends AppCompatActivity {
         });
 
         imgChild3.setOnClickListener(new View.OnClickListener() {
-            Intent intNextActivity = new Intent(Children.this, Child.class);
+            Intent intNextActivity = new Intent(Children.this, Child3.class);
             @Override
             public void onClick(View v) {
                 startActivity(intNextActivity);

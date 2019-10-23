@@ -116,7 +116,7 @@
             android:layout_height="190dp"
             android:layout_gravity="center_horizontal|center_vertical"
             android:contentDescription="@string/descChildImage"
-            android:src="@mipmap/boy" />
+            android:src="@mipmap/girl" />
 
     </FrameLayout>
 
@@ -125,7 +125,6 @@
         style="@style/style_categoryHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
         android:text="@string/txtChildren"
         app:layout_constraintBottom_toTopOf="@+id/frameLayout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -138,7 +137,7 @@
         style="@style/style_heading2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Born 1977"
+        android:text="Born 1901"
         android:textColor="@color/colorWhite"
         android:translationY="@dimen/dimen_bioText_translationY"
         app:layout_constraintEnd_toEndOf="parent"
@@ -151,7 +150,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
-        android:text="Bob Grey"
+        android:text="Emma Grey"
         android:textColor="@color/colorWhite"
         app:layout_constraintBottom_toTopOf="@+id/glnButtonsTop"
         app:layout_constraintEnd_toEndOf="parent"
@@ -178,21 +177,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.59" />
+        app:layout_constraintGuide_percent=".55" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glnButtonsBottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.85" />
+        app:layout_constraintGuide_percent="0.78" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glnImageTop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.15" />
+        app:layout_constraintGuide_percent="0.12" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
