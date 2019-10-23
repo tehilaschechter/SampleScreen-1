@@ -11,6 +11,7 @@ public class Children extends AppCompatActivity {
     ImageView imgProfileHome;
     ImageView imgChild1;
     ImageView imgChild2;
+    ImageView imgChild3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +21,7 @@ public class Children extends AppCompatActivity {
         imgProfileHome = (ImageView)findViewById(R.id.btnProfileHome);
         imgChild1 = (ImageView)findViewById(R.id.imgChild1);
         imgChild2 = (ImageView)findViewById(R.id.imgChild2);
+        imgChild3 = (ImageView)findViewById(R.id.imgChild3);
 
         imgProfileHome.setOnClickListener(new View.OnClickListener() {
             Intent intNextActivity = new Intent(Children.this, MainActivity.class);
@@ -40,6 +42,15 @@ public class Children extends AppCompatActivity {
         });
 
         imgChild2.setOnClickListener(new View.OnClickListener() {
+            Intent intNextActivity = new Intent(Children.this, Child.class);
+            @Override
+            public void onClick(View v) {
+                startActivity(intNextActivity);
+                overridePendingTransition(R.transition.anim_push_in_right,R.transition.anim_push_out_left);
+            }
+        });
+
+        imgChild3.setOnClickListener(new View.OnClickListener() {
             Intent intNextActivity = new Intent(Children.this, Child.class);
             @Override
             public void onClick(View v) {
