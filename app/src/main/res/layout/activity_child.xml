@@ -35,8 +35,7 @@
         android:contentDescription="@string/descProfileImage"
         android:src="@drawable/man"
         app:layout_constraintBottom_toBottomOf="@+id/imgLogo"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:clickable="true"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/btnBirth"
@@ -87,10 +86,10 @@
 
     <Button
         android:id="@+id/btnMemories"
-        android:background="@drawable/rect_rounded_button"
         style="@style/style_filled_button_sub"
         android:layout_width="0dp"
         android:layout_marginTop="15dp"
+        android:background="@drawable/rect_rounded_button"
         android:drawableEnd="@drawable/video_icon"
         android:paddingLeft="@dimen/dimen_centerMediaButtonText"
         android:paddingRight="@dimen/dimen_mediaButtonRight"
@@ -178,14 +177,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent=".56" />
+        app:layout_constraintGuide_percent=".55" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glnButtonsBottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.83" />
+        app:layout_constraintGuide_percent="0.78" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glnImageTop"
