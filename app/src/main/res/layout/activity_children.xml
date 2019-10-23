@@ -111,9 +111,10 @@
                     style="@style/style_heading2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
                     android:text="Born 1897"
                     android:textColor="@color/colorWhite"
-                    android:translationY="-8dp" />
+                    android:translationY="@dimen/dimen_bioText_translationY" />
 
                 <FrameLayout
                     android:id="@+id/frameLayout2"
@@ -145,9 +146,10 @@
                     style="@style/style_heading2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
                     android:text="Born 1901"
                     android:textColor="@color/colorWhite"
-                    android:translationY="-8dp" />
+                    android:translationY="@dimen/dimen_bioText_translationY" />
 
                 <FrameLayout
                     android:id="@+id/frameLayout3"
@@ -180,9 +182,10 @@
                     style="@style/style_heading2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
                     android:text="Born 1911"
                     android:textColor="@color/colorWhite"
-                    android:translationY="-8dp" />
+                    android:translationY="@dimen/dimen_bioText_translationY" />
             </LinearLayout>
         </ScrollView>
     </FrameLayout>

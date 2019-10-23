@@ -3,7 +3,7 @@
     <!--TEXT DIMENS-->
     <dimen name="dimen_heading1">22dp</dimen>
     <dimen name="dimen_heading2">16dp</dimen>
-    <dimen name="dimen_body">20dp</dimen>
+    <dimen name="dimen_body">18dp</dimen>
     <dimen name="dimen_categoryHeading">26dp</dimen>
     <dimen name="dimen_mediaSubheading2">18dp</dimen>
     <dimen name="dimen_appName">11dp</dimen>
@@ -16,7 +16,7 @@
     <dimen name="dimen_scrollWidth">14dp</dimen>
     <dimen name="dimen_scrollHeight">14dp</dimen>
 
-    <dimen name="dimen_homeWidth">40dp</dimen>
+    <dimen name="dimen_homeWidth">30dp</dimen>
     <dimen name="dimen_homeHeight">35dp</dimen>
     <dimen name="dimen_hamburgerHeight">20dp</dimen>
 
@@ -26,6 +26,7 @@
 
     <!--OTHER-->
     <dimen name="dimen_centerMediaButtonText">60dp</dimen>
-    <dimen name="dimen_mediaButtonRight">-10dp</dimen>
+    <dimen name="dimen_mediaButtonRight">-2dp</dimen>
     <dimen name="dimen_header_drop_S8">15dp</dimen>
+    <dimen name="dimen_bioText_translationY">-2dp</dimen>
 </resources>

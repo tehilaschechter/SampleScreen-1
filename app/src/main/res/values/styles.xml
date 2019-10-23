@@ -60,8 +60,6 @@
         <item name="android:layout_height">@dimen/dimen_filledButtonHeight</item>
         <item name="android:textAllCaps">false</item>
         <item name="android:stateListAnimator">@null</item>
-        <!--item name="android:autoSizeTextType">uniform</item>
-        <item name="android:autoSizeMaxTextSize">@dimen/dimen_body</item-->
     </style>
 
     <style name="style_filled_button_category">
@@ -73,21 +71,17 @@
         <item name="android:layout_height">@dimen/dimen_filledButtonHeight</item>
         <item name="android:textAllCaps">false</item>
         <item name="android:stateListAnimator">@null</item>
-        <!--item name="android:autoSizeTextType">uniform</item>
-        <item name="android:autoSizeMaxTextSize">@dimen/dimen_body</item-->
     </style>
 
     <style name="style_filled_button_sub">
         <item name="android:backgroundTint">@color/color_filledButtonSub</item>
         <item name="android:textColor">@color/color_bodyText</item>
         <item name="android:fontFamily">@font/opensans_semibold</item>
-        <!--item name="android:textSize">@dimen/dimen_body</item-->
+        <item name="android:textSize">@dimen/dimen_body</item>
         <item name="android:layout_width">@dimen/dimen_filledButtonWidth</item>
         <item name="android:layout_height">@dimen/dimen_filledButtonHeight</item>
         <item name="android:textAllCaps">false</item>
         <item name="android:stateListAnimator">@null</item>
-        <!--item name="android:autoSizeTextType">uniform</item>
-        <item name="android:autoSizeMaxTextSize">@dimen/dimen_body</item-->
     </style>
 
 
