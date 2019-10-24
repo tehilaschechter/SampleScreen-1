@@ -64,7 +64,7 @@
             android:layout_height="184dp"
             android:layout_gravity="center_horizontal|center_vertical"
             android:contentDescription="@string/descParentImage"
-            android:src="@mipmap/father" />
+            android:src="@mipmap/parent2" />
 
     </FrameLayout>
 
@@ -136,7 +136,7 @@
         style="@style/style_heading2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Born 1897"
+        android:text="Born 1901"
         android:textColor="@color/colorWhite"
         android:translationY="@dimen/dimen_bioText_translationY"
         app:layout_constraintEnd_toEndOf="parent"
@@ -146,11 +146,11 @@
     <TextView
         android:id="@+id/txtParentName"
         style="@style/style_categorySubHeading"
-        android:textColor="@color/colorWhite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:text="Yaakov Grey"
+        android:text="Devora Grey"
+        android:textColor="@color/colorWhite"
         app:layout_constraintBottom_toTopOf="@+id/glnButtonsTop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
